@@ -1,0 +1,1609 @@
+Variables:
+
+Chopping TreePine Rock Value:32
+Chopping TreePine ToolAxeStone Value:24
+Chopping TreePine ToolAxe Value:12
+Chopping TreeApple Rock Value:32
+Chopping TreeApple ToolAxeStone Value:24
+Chopping TreeApple ToolAxe Value:12
+Chopping TreeCoconut Rock Value:32
+Chopping TreeCoconut ToolAxeStone Value:24
+Chopping TreeCoconut ToolAxe Value:12
+Chopping TreeMulberry Rock Value:32
+Chopping TreeMulberry ToolAxeStone Value:24
+Chopping TreeMulberry ToolAxe Value:12
+Chopping Log ToolAxeStone Value:16
+Chopping Log ToolAxe Value:12
+Chopping Plank ToolAxeStone Value:16
+Chopping Plank ToolAxe Value:12
+Chopping Pole ToolAxeStone Value:12
+Chopping Pole ToolAxe Value:6
+Flail Wheat Stick Value:18
+Flail Wheat ToolFlailCrude Value:6
+Flail Wheat ToolFlail Value:3
+Flail Bush Stick Value:15
+Flail Bush ToolFlailCrude Value:9
+Flail Bush ToolFlail Value:6
+Flail Pumpkin Stick Value:15
+Flail Pumpkin ToolFlailCrude Value:9
+Flail Pumpkin ToolFlail Value:6
+Hammering TreePine Stick Value:16
+Hammering TreePine ToolMallet Value:6
+Hammering TreeApple Stick Value:16
+Hammering TreeApple ToolMallet Value:6
+Hammering TreeCoconut Stick Value:16
+Hammering TreeCoconut ToolMallet Value:6
+Hammering TreeMulberry Stick Value:16
+Hammering TreeMulberry ToolMallet Value:6
+Hammering Pumpkin Stick Value:16
+Hammering Pumpkin ToolMallet Value:6
+Hoe Plot ToolHoeStone Value:16
+Hoe Plot ToolHoe Value:8
+Milking AnimalCow ToolBucketCrude Value:12
+Milking AnimalCow ToolBucket Value:8
+Milking AnimalCow ToolBucketMetal Value:4
+Milking AnimalCowHighland ToolBucketCrude Value:12
+Milking AnimalCowHighland ToolBucket Value:8
+Milking AnimalCowHighland ToolBucketMetal Value:4
+Milking MilkingShedCrude ToolBucketCrude Value:12
+Milking MilkingShedCrude ToolBucket Value:8
+Milking MilkingShedCrude ToolBucketMetal Value:4
+Mining Plot ToolPickStone Value:20
+Mining Plot ToolPick Value:12
+Mining Boulder Rock Value:32
+Mining Boulder ToolPickStone Value:24
+Mining Boulder ToolPick Value:12
+Mining TallBoulder Rock Value:32
+Mining TallBoulder ToolPickStone Value:24
+Mining TallBoulder ToolPick Value:12
+Mining Iron ToolPickStone Value:20
+Mining Iron ToolPick Value:12
+Mining Coal ToolPickStone Value:20
+Mining Coal ToolPick Value:12
+StoneCutting Plot ToolChiselCrude Value:40
+StoneCutting Plot ToolChisel Value:20
+StoneCutting TallBoulder ToolChiselCrude Value:40
+StoneCutting TallBoulder ToolChisel Value:20
+Scythe CropWheat RockSharp Value:18
+Scythe CropWheat ToolScytheStone Value:10
+Scythe CropWheat ToolScythe Value:6
+Scythe CropWheat ToolBlade Value:8
+Scythe CropCotton RockSharp Value:18
+Scythe CropCotton ToolScytheStone Value:10
+Scythe CropCotton ToolScythe Value:6
+Scythe CropCotton ToolBlade Value:8
+Scythe Bullrushes RockSharp Value:18
+Scythe Bullrushes ToolScytheStone Value:10
+Scythe Bullrushes ToolScythe Value:6
+Scythe Bullrushes ToolBlade Value:8
+Scythe Grass RockSharp Value:16
+Scythe Grass ToolScytheStone Value:12
+Scythe Grass ToolScythe Value:6
+Scythe Grass ToolBlade Value:10
+Scythe FlowerWild ToolScytheStone Value:6
+Scythe FlowerWild ToolScythe Value:4
+Scythe FlowerWild ToolBlade Value:5
+Scythe FlowerPot ToolScytheStone Value:6
+Scythe FlowerPot ToolScythe Value:4
+Scythe FlowerPot ToolBlade Value:5
+Scythe CropPumpkin ToolScytheStone Value:6
+Scythe CropPumpkin ToolScythe Value:4
+Scythe CropPumpkin ToolBlade Value:5
+Shearing AnimalSheep ToolShears Value:12
+Shearing AnimalAlpaca ToolShears Value:12
+Shearing Bush ToolShears Value:6
+Shearing ShearingShedCrude ToolShears Value:8
+Shovel Plot Stick Value:20
+Shovel Plot ToolShovelStone Value:16
+Shovel Plot ToolShovel Value:8
+Shovel Weed Stick Value:24
+Shovel Weed ToolShovelStone Value:16
+Shovel Weed ToolShovel Value:8
+Shovel CropCarrot Stick Value:24
+Shovel CropCarrot ToolShovelStone Value:16
+Shovel CropCarrot ToolShovel Value:8
+Shovel Bush Stick Value:32
+Shovel Bush ToolShovelStone Value:24
+Shovel Bush ToolShovel Value:12
+Shovel Hedge Stick Value:32
+Shovel Hedge ToolShovelStone Value:24
+Shovel Hedge ToolShovel Value:12
+Shovel Mushroom Stick Value:20
+Shovel Mushroom ToolShovelStone Value:12
+Shovel Mushroom ToolShovel Value:6
+Shovel FlowerWild Stick Value:20
+Shovel FlowerWild ToolShovelStone Value:12
+Shovel FlowerWild ToolShovel Value:6
+Shovel Grass Stick Value:20
+Shovel Grass ToolShovelStone Value:12
+Shovel Grass ToolShovel Value:6
+Shovel TreeStump ToolShovelStone Value:20
+Shovel TreeStump ToolShovel Value:12
+Shovel Empty ToolShovelStone Value:16
+Shovel Empty ToolShovel Value:8
+Shovel Clay ToolShovelStone Value:20
+Shovel Clay ToolShovel Value:12
+Chopping FishAny RockSharp Value:10
+Chopping FishAny ToolBlade Value:5
+Fishing Plot ToolFishingStick Value:20
+Dredging Plot ToolDredgerCrude Value:20
+Netting Plot ToolNetCrude Value:20
+Netting Plot ToolNet Value:10
+DroppingSoil Plot ToolBucketCrude Value:4
+DroppingSoil Plot ToolBucket Value:4
+DroppingSoil Plot ToolBucketMetal Value:4
+ToolShovelStone MaxUsage Value:20
+ToolShovel MaxUsage Value:50
+ToolAxeStone MaxUsage Value:20
+ToolAxe MaxUsage Value:50
+ToolHoeStone MaxUsage Value:20
+ToolHoe MaxUsage Value:50
+ToolScytheStone MaxUsage Value:40
+ToolScythe MaxUsage Value:100
+ToolPickStone MaxUsage Value:20
+ToolPick MaxUsage Value:50
+ToolBucketCrude MaxUsage Value:21
+ToolBucket MaxUsage Value:51
+ToolBucketMetal MaxUsage Value:200
+ToolFishingStick MaxUsage Value:10
+ToolFishingRod MaxUsage Value:40
+ToolFishingRodGood MaxUsage Value:90
+ToolFlailCrude MaxUsage Value:40
+ToolFlail MaxUsage Value:100
+ToolBroom MaxUsage Value:50
+ToolChiselCrude MaxUsage Value:5
+ToolChisel MaxUsage Value:20
+ToolTorchCrude MaxUsage Value:1
+ToolMallet MaxUsage Value:20
+ToolPitchfork MaxUsage Value:20
+ToolShears MaxUsage Value:20
+ToolWateringCan MaxUsage Value:100
+ToolDredgerCrude MaxUsage Value:20
+ToolNetCrude MaxUsage Value:20
+ToolNet MaxUsage Value:40
+ToolBlade MaxUsage Value:50
+Stick MaxUsage Value:10
+Rock MaxUsage Value:5
+RockSharp MaxUsage Value:5
+ToolBucketCrude Capacity Value:1
+ToolBucket Capacity Value:3
+ToolBucketMetal Capacity Value:5
+ToolWateringCan Capacity Value:10
+ToolPitchfork Capacity Value:5
+ToolFishingStick Capacity Value:10
+ToolFishingRod Capacity Value:20
+ToolFishingRodGood Capacity Value:30
+ToolBucketCrude FillScoops Value:7
+ToolBucket FillScoops Value:5
+ToolBucketMetal FillScoops Value:3
+ToolWateringCan FillScoops Value:3
+ToolPitchfork FillScoops Value:3
+ToolFishingStick FillScoops Value:1
+ToolFishingRod FillScoops Value:1
+ToolFishingRodGood FillScoops Value:1
+WorkerFrameMk0 WorkingSoundName Value:WorkerWorkingClockwork
+WorkerFrameMk0 CarrySize Value:3
+WorkerFrameMk0 InventorySize Value:0
+WorkerFrameMk0 UpgradeSize Value:1
+WorkerFrameMk0 FrameScale Value:1
+WorkerHeadMk0 MaxInstructions Value:12
+WorkerHeadMk0 SerialPrefix Value:Mk0
+WorkerHeadMk0 FindNearestRange Value:12
+WorkerHeadMk0 FindNearestDelay Value:40
+WorkerHeadMk0 HeadScale Value:1
+WorkerDriveMk0 MoveSoundName Value:WorkerCrudeMove
+WorkerDriveMk0 MoveStoneSoundName Value:WorkerCrudeStoneMove
+WorkerDriveMk0 MoveClaySoundName Value:WorkerCrudeClayMove
+WorkerDriveMk0 SpeedScale Value:0.5
+WorkerDriveMk0 MoveInitialDelay Value:60
+WorkerDriveMk0 RechargeDelay Value:3
+WorkerDriveMk0 DriveEnergy Value:90
+WorkerDriveMk0 DriveScale Value:1
+WorkerFrameMk1 WorkingSoundName Value:WorkerWorkingClockwork
+WorkerFrameMk1 CarrySize Value:4
+WorkerFrameMk1 InventorySize Value:1
+WorkerFrameMk1 UpgradeSize Value:2
+WorkerFrameMk1 FrameScale Value:1
+WorkerHeadMk1 MaxInstructions Value:16
+WorkerHeadMk1 SerialPrefix Value:Mk1
+WorkerHeadMk1 FindNearestRange Value:16
+WorkerHeadMk1 FindNearestDelay Value:30
+WorkerHeadMk1 HeadScale Value:1
+WorkerDriveMk1 MoveSoundName Value:WorkerCrudeMove
+WorkerDriveMk1 MoveStoneSoundName Value:WorkerCrudeStoneMove
+WorkerDriveMk1 MoveClaySoundName Value:WorkerCrudeClayMove
+WorkerDriveMk1 SpeedScale Value:0.5
+WorkerDriveMk1 MoveInitialDelay Value:40
+WorkerDriveMk1 RechargeDelay Value:2
+WorkerDriveMk1 DriveEnergy Value:150
+WorkerDriveMk1 DriveScale Value:1
+WorkerFrameMk2 WorkingSoundName Value:WorkerWorkingClockwork
+WorkerFrameMk2 CarrySize Value:6
+WorkerFrameMk2 InventorySize Value:2
+WorkerFrameMk2 UpgradeSize Value:2
+WorkerFrameMk2 FrameScale Value:1
+WorkerHeadMk2 MaxInstructions Value:20
+WorkerHeadMk2 SerialPrefix Value:Mk2
+WorkerHeadMk2 FindNearestRange Value:30
+WorkerHeadMk2 FindNearestDelay Value:20
+WorkerHeadMk2 HeadScale Value:1
+WorkerDriveMk2 MoveSoundName Value:WorkerMove
+WorkerDriveMk2 MoveStoneSoundName Value:WorkerStoneMove
+WorkerDriveMk2 MoveClaySoundName Value:WorkerClayMove
+WorkerDriveMk2 SpeedScale Value:0.75
+WorkerDriveMk2 MoveInitialDelay Value:30
+WorkerDriveMk2 RechargeDelay Value:1.5
+WorkerDriveMk2 DriveEnergy Value:200
+WorkerDriveMk2 DriveScale Value:1
+WorkerFrameMk3 WorkingSoundName Value:WorkerWorking
+WorkerFrameMk3 CarrySize Value:8
+WorkerFrameMk3 InventorySize Value:4
+WorkerFrameMk3 UpgradeSize Value:3
+WorkerFrameMk3 FrameScale Value:1
+WorkerHeadMk3 MaxInstructions Value:32
+WorkerHeadMk3 SerialPrefix Value:Mk3
+WorkerHeadMk3 FindNearestRange Value:35
+WorkerHeadMk3 FindNearestDelay Value:10
+WorkerHeadMk3 HeadScale Value:1
+WorkerDriveMk3 MoveSoundName Value:WorkerSteamMove
+WorkerDriveMk3 MoveStoneSoundName Value:WorkerMoveStone
+WorkerDriveMk3 MoveClaySoundName Value:WorkerMoveClay
+WorkerDriveMk3 SpeedScale Value:1
+WorkerDriveMk3 MoveInitialDelay Value:20
+WorkerDriveMk3 RechargeDelay Value:1.5
+WorkerDriveMk3 DriveEnergy Value:500
+WorkerDriveMk3 DriveScale Value:1
+Bush GrowSeedDelay Value:5
+Bush GrowBushDelay Value:20
+Bush GrowBerriesDelay Value:120
+TreeApple GrowFruitDelay Value:120
+TreeCoconut GrowFruitDelay Value:120
+TreeMulberry GrowFruitDelay Value:5
+CropWheat GrowDelay Value:180
+CropWheat MaxYield Value:5
+CropWheat TilledBoost Value:1
+CropWheat FertiliserBoost Value:1
+CropWheat WaterBoost Value:1
+CropWheat MaxHeight Value:1
+CropCotton GrowDelay Value:180
+CropCotton MaxYield Value:5
+CropCotton TilledBoost Value:1
+CropCotton FertiliserBoost Value:1
+CropCotton WaterBoost Value:1
+CropCotton MaxHeight Value:1
+CropCarrot GrowDelay Value:180
+CropCarrot MaxYield Value:5
+CropCarrot TilledBoost Value:1
+CropCarrot FertiliserBoost Value:1
+CropCarrot WaterBoost Value:1
+CropCarrot MaxHeight Value:1
+Grass GrowDelay Value:45
+Weed GrowDelay Value:20
+Mushroom GrowDelay Value:180
+Bullrushes GrowDelay Value:180
+ClaySoilChance Value:50
+IronSoilChance Value:20
+IronSoil2Chance Value:50
+CoalSoilChance Value:20
+CoalSoil2Chance Value:40
+CoalSoil3Chance Value:60
+StoneSoilChance Value:50
+TurfChance Value:30
+BrickWall SearchArea Value:400
+FarmerPlayer BaseDelay Value:0.2
+FarmerPlayer CarrySize Value:4
+FarmerPlayer InventoryCapacity Value:1
+Worker BaseDelay Value:0.2
+Folk MaxEnergy Value:180
+Folk HappinessDelay Value:15
+Folk Weight0 Value:1
+Folk Weight1 Value:2
+Folk Weight2 Value:8
+Folk Weight3 Value:16
+Folk Weight4 Value:32
+Folk Weight5 Value:48
+Folk Weight6 Value:64
+Folk Weight7 Value:80
+FolkHeart Value Value:1
+FolkHeart2 Value Value:10
+FolkHeart3 Value Value:100
+FolkHeart4 Value Value:1000
+FolkHeart5 Value Value:10000
+FolkHeart6 Value Value:100000
+FolkHeart7 Value Value:1000000
+FolkHeart Usage Value:1
+FolkHeart2 Usage Value:10
+FolkHeart3 Usage Value:100
+FolkHeart4 Usage Value:1000
+FolkHeart5 Usage Value:10000
+FolkHeart6 Usage Value:100000
+FolkHeart7 Usage Value:1000000
+MushroomSoup FuelRequired Value:10
+MushroomStew FuelRequired Value:30
+MushroomPie FuelRequired Value:50
+MushroomPudding FuelRequired Value:100
+MushroomBurger FuelRequired Value:150
+BerriesStew FuelRequired Value:10
+BerriesJam FuelRequired Value:30
+BerriesPie FuelRequired Value:50
+BerriesCake FuelRequired Value:100
+BerryDanish FuelRequired Value:150
+BreadCrude FuelRequired Value:40
+Bread FuelRequired Value:50
+BreadPudding FuelRequired Value:100
+CreamBrioche FuelRequired Value:150
+PumpkinSoup FuelRequired Value:10
+PumpkinStew FuelRequired Value:30
+PumpkinPie FuelRequired Value:50
+PumpkinCake FuelRequired Value:100
+PumpkinBurger FuelRequired Value:150
+AppleStew FuelRequired Value:10
+AppleJam FuelRequired Value:30
+ApplePie FuelRequired Value:50
+AppleCake FuelRequired Value:100
+AppleDanish FuelRequired Value:150
+FishSoup FuelRequired Value:20
+FishStew FuelRequired Value:30
+FishPie FuelRequired Value:50
+FishCake FuelRequired Value:100
+FishBurger FuelRequired Value:150
+CarrotStirFry FuelRequired Value:20
+CarrotHoney FuelRequired Value:30
+CarrotCurry FuelRequired Value:50
+Naan FuelRequired Value:20
+CarrotCake FuelRequired Value:100
+CarrotBurger FuelRequired Value:150
+MilkPorridge FuelRequired Value:10
+FruitPorridge FuelRequired Value:20
+HoneyPorridge FuelRequired Value:20
+AppleBerryPie FuelRequired Value:100
+PumpkinMushroomPie FuelRequired Value:100
+Charcoal FuelRequired Value:0
+IronCrude FuelRequired Value:80
+PotClay FuelRequired Value:20
+LargeBowlClay FuelRequired Value:20
+FlowerPot FuelRequired Value:20
+BricksCrude FuelRequired Value:20
+Gnome FuelRequired Value:20
+Gnome2 FuelRequired Value:20
+Gnome3 FuelRequired Value:20
+Gnome4 FuelRequired Value:20
+Gnome5 FuelRequired Value:20
+Gnome6 FuelRequired Value:20
+RoofTiles FuelRequired Value:20
+JarClay FuelRequired Value:20
+Ink FuelRequired Value:20
+Seedling FuelRequired Value:1
+SeedlingMulberry FuelRequired Value:1
+MushroomDug Energy Value:20
+MushroomDug Tier Value:0
+MushroomHerb Energy Value:30
+MushroomHerb Tier Value:1
+MushroomSoup Energy Value:40
+MushroomSoup Tier Value:2
+MushroomStew Energy Value:50
+MushroomStew Tier Value:3
+MushroomPie Energy Value:60
+MushroomPie Tier Value:4
+MushroomPuddingRaw Tier Value:5
+MushroomPudding Energy Value:70
+MushroomPudding Tier Value:5
+MushroomBurger Energy Value:80
+MushroomBurger Tier Value:6
+Berries Energy Value:20
+Berries Tier Value:0
+BerriesSpice Energy Value:30
+BerriesSpice Tier Value:1
+BerriesStew Energy Value:40
+BerriesStew Tier Value:2
+BerriesJam Energy Value:50
+BerriesJam Tier Value:3
+BerriesPie Energy Value:60
+BerriesPie Tier Value:4
+BerriesCake Energy Value:70
+BerriesCake Tier Value:5
+BerryDanish Energy Value:80
+BerryDanish Tier Value:6
+Porridge Energy Value:30
+Porridge Tier Value:1
+BreadCrude Energy Value:40
+BreadCrude Tier Value:2
+Bread Energy Value:50
+Bread Tier Value:3
+BreadButtered Energy Value:60
+BreadButtered Tier Value:4
+BreadPudding Energy Value:70
+BreadPudding Tier Value:5
+CreamBrioche Energy Value:80
+CreamBrioche Tier Value:6
+PumpkinRaw Energy Value:20
+PumpkinRaw Tier Value:0
+PumpkinSeeds Energy Value:20
+PumpkinSeeds Tier Value:0
+PumpkinHerb Energy Value:30
+PumpkinHerb Tier Value:1
+PumpkinSoup Energy Value:40
+PumpkinSoup Tier Value:2
+PumpkinStew Energy Value:50
+PumpkinStew Tier Value:3
+PumpkinPie Energy Value:60
+PumpkinPie Tier Value:4
+PumpkinCakeRaw Tier Value:5
+PumpkinCake Energy Value:70
+PumpkinCake Tier Value:5
+PumpkinBurger Energy Value:80
+PumpkinBurger Tier Value:6
+FishRaw Energy Value:20
+FishRaw Tier Value:0
+FishHerb Energy Value:30
+FishHerb Tier Value:1
+FishSoup Energy Value:40
+FishSoup Tier Value:2
+FishStew Energy Value:50
+FishStew Tier Value:3
+FishPie Energy Value:60
+FishPie Tier Value:4
+FishCakeRaw Tier Value:5
+FishCake Energy Value:70
+FishCake Tier Value:5
+FishBurger Energy Value:80
+FishBurger Tier Value:6
+Apple Energy Value:20
+Apple Tier Value:0
+AppleSpice Energy Value:30
+AppleSpice Tier Value:1
+AppleStew Energy Value:40
+AppleStew Tier Value:2
+AppleJam Energy Value:50
+AppleJam Tier Value:3
+ApplePie Energy Value:60
+ApplePie Tier Value:4
+AppleCakeRaw Tier Value:5
+AppleCake Energy Value:70
+AppleCake Tier Value:5
+AppleDanish Energy Value:80
+AppleDanish Tier Value:6
+Carrot Energy Value:20
+Carrot Tier Value:0
+CarrotSalad Energy Value:30
+CarrotSalad Tier Value:1
+CarrotStirFry Energy Value:40
+CarrotStirFry Tier Value:2
+CarrotHoney Energy Value:50
+CarrotHoney Tier Value:3
+CarrotCurry Energy Value:60
+CarrotCurry Tier Value:4
+CarrotCakeRaw Tier Value:5
+CarrotCake Energy Value:70
+CarrotCake Tier Value:5
+CarrotBurger Energy Value:80
+CarrotBurger Tier Value:6
+MilkPorridge Energy Value:40
+MilkPorridge Tier Value:2
+FruitPorridge Energy Value:50
+FruitPorridge Tier Value:3
+HoneyPorridge Energy Value:50
+HoneyPorridge Tier Value:3
+AppleBerryPie Energy Value:70
+AppleBerryPie Tier Value:5
+PumpkinMushroomPie Energy Value:70
+PumpkinMushroomPie Tier Value:5
+Naan Energy Value:20
+Naan Tier Value:3
+Water Energy Value:10
+Water Tier Value:0
+Milk Energy Value:10
+Milk Tier Value:0
+Egg Energy Value:10
+Egg Tier Value:0
+Butter Energy Value:10
+Butter Tier Value:0
+Honey Energy Value:10
+Honey Tier Value:1
+UpgradePlayerInventoryCrude Capacity Value:1
+UpgradePlayerInventoryGood Capacity Value:3
+UpgradePlayerInventorySuper Capacity Value:5
+UpgradePlayerMovementCrude Delay Value:0.05
+UpgradePlayerMovementGood Delay Value:0.075
+UpgradePlayerMovementSuper Delay Value:0.1
+UpgradeWorkerInventoryCrude Capacity Value:1
+UpgradeWorkerInventoryGood Capacity Value:2
+UpgradeWorkerInventorySuper Capacity Value:4
+UpgradeWorkerCarryCrude Capacity Value:1
+UpgradeWorkerCarryGood Capacity Value:2
+UpgradeWorkerCarrySuper Capacity Value:4
+UpgradeWorkerEnergyCrude DriveEnergy Value:0.2
+UpgradeWorkerEnergyGood DriveEnergy Value:0.4
+UpgradeWorkerEnergySuper DriveEnergy Value:0.6
+UpgradeWorkerMemoryCrude Size Value:4
+UpgradeWorkerMemoryGood Size Value:8
+UpgradeWorkerMemorySuper Size Value:32
+UpgradeWorkerMovementCrude InitialDelay Value:20
+UpgradeWorkerMovementCrude MoveScale Value:0.1
+UpgradeWorkerMovementGood InitialDelay Value:40
+UpgradeWorkerMovementGood MoveScale Value:0.2
+UpgradeWorkerMovementSuper InitialDelay Value:60
+UpgradeWorkerMovementSuper MoveScale Value:0.3
+UpgradeWorkerSearchCrude InitialDelay Value:10
+UpgradeWorkerSearchCrude Range Value:5
+UpgradeWorkerSearchGood InitialDelay Value:20
+UpgradeWorkerSearchGood Range Value:10
+UpgradeWorkerSearchSuper InitialDelay Value:30
+UpgradeWorkerSearchSuper Range Value:15
+Plank Unlocked Value:1
+Pole Unlocked Value:1
+Stick Unlocked Value:1
+Rock Unlocked Value:1
+Log Unlocked Value:1
+Clay Unlocked Value:1
+IronOre Unlocked Value:1
+Coal Unlocked Value:1
+BeesNest Unlocked Value:1
+Apple Unlocked Value:1
+TreeSeed Unlocked Value:1
+TreeMulberry Unlocked Value:1
+SeedlingMulberry Unlocked Value:1
+SilkRaw Unlocked Value:1
+AnimalSilkmoth Unlocked Value:1
+Pumpkin Unlocked Value:1
+PumpkinSeeds Unlocked Value:1
+PumpkinRaw Unlocked Value:1
+Berries Unlocked Value:1
+GrassCut Unlocked Value:1
+AnimalBee Unlocked Value:1
+AnimalBird Unlocked Value:1
+AnimalChicken Unlocked Value:1
+AnimalCow Unlocked Value:1
+AnimalSheep Unlocked Value:1
+AnimalLeech Unlocked Value:1
+FishBait Unlocked Value:1
+FishingJunkFresh Unlocked Value:1
+FishingJunkSalt Unlocked Value:1
+FishCatFish Unlocked Value:1
+FishMahiMahi Unlocked Value:1
+FishOrangeRoughy Unlocked Value:1
+FishPerch Unlocked Value:1
+FishSalmon Unlocked Value:1
+FishCarp Unlocked Value:1
+FishGar Unlocked Value:1
+FishMonkfish Unlocked Value:1
+FishMarlin Unlocked Value:1
+Egg Unlocked Value:1
+MushroomDug Unlocked Value:1
+Water Unlocked Value:1
+Milk Unlocked Value:1
+SeaWater Unlocked Value:1
+Sand Unlocked Value:1
+Soil Unlocked Value:1
+Manure Unlocked Value:1
+WheatSeed Unlocked Value:1
+Wheat Unlocked Value:1
+Straw Unlocked Value:1
+Wool Unlocked Value:1
+WeedDug Unlocked Value:1
+Turf Unlocked Value:1
+FlowerSeeds01 Unlocked Value:1
+FlowerSeeds02 Unlocked Value:1
+FlowerSeeds03 Unlocked Value:1
+FlowerSeeds04 Unlocked Value:1
+FlowerSeeds05 Unlocked Value:1
+FlowerSeeds06 Unlocked Value:1
+FlowerSeeds07 Unlocked Value:1
+FlowerBunch01 Unlocked Value:1
+FlowerBunch02 Unlocked Value:1
+FlowerBunch03 Unlocked Value:1
+FlowerBunch04 Unlocked Value:1
+FlowerBunch05 Unlocked Value:1
+FlowerBunch06 Unlocked Value:1
+FlowerBunch07 Unlocked Value:1
+Folk Unlocked Value:1
+FolkHeart Unlocked Value:1
+FolkHeart2 Unlocked Value:1
+FolkHeart3 Unlocked Value:1
+FolkHeart4 Unlocked Value:1
+FolkHeart5 Unlocked Value:1
+FolkHeart6 Unlocked Value:1
+FolkHeart7 Unlocked Value:1
+FishAny Unlocked Value:1
+HatAny Unlocked Value:1
+TopAny Unlocked Value:1
+HeartAny Unlocked Value:1
+WorkerFrameAny Unlocked Value:1
+WorkerHeadAny Unlocked Value:1
+WorkerDriveAny Unlocked Value:1
+Fuel Unlocked Value:1
+StoneBlockCrude Unlocked Value:1
+Fleece Unlocked Value:1
+FishRaw Unlocked Value:1
+CottonSeeds Unlocked Value:1
+CottonBall Unlocked Value:1
+CottonLint Unlocked Value:1
+BullrushesSeeds Unlocked Value:1
+BullrushesStems Unlocked Value:1
+BullrushesFibre Unlocked Value:1
+Weed Unlocked Value:1
+Grass Unlocked Value:1
+CropWheat Unlocked Value:1
+CropCotton Unlocked Value:1
+TreePine Unlocked Value:1
+TreeApple Unlocked Value:1
+TreeStump Unlocked Value:1
+CropPumpkin Unlocked Value:1
+Bush Unlocked Value:1
+Hedge Unlocked Value:1
+Mushroom Unlocked Value:1
+FlowerWild Unlocked Value:1
+Bullrushes Unlocked Value:1
+Honey Unlocked Value:1
+Charcoal Weight Value:2
+HayBale Weight Value:2
+Pumpkin Weight Value:2
+IronCrude Weight Value:2
+IronOre Weight Value:2
+MetalCog Weight Value:4
+MetalWheel Weight Value:4
+MetalAxle Weight Value:2
+MetalPoleCrude Weight Value:2
+MetalPlateCrude Weight Value:2
+LargeBowlClayRaw Weight Value:3
+LargeBowlClay Weight Value:3
+BricksCrude Weight Value:2
+BricksCrudeRaw Weight Value:2
+RoofTiles Weight Value:2
+RoofTilesRaw Weight Value:2
+Axle Weight Value:2
+Cog Weight Value:2
+CogCrude Weight Value:2
+FolkHeart3 Weight Value:2
+FolkHeart4 Weight Value:2
+Scarecrow Weight Value:3
+Log Weight Value:3
+Worker Weight Value:3
+FolkHeart5 Weight Value:3
+FolkHeart6 Weight Value:4
+FolkHeart7 Weight Value:5
+Boiler Weight Value:8
+ConnectingRod Weight Value:4
+Flywheel Weight Value:8
+Piston Weight Value:8
+MetalGirder Weight Value:8
+Firebox Weight Value:8
+Rivets Weight Value:2
+Chimney Weight Value:4
+Fireplace Weight Value:4
+Millstone Weight Value:4
+StoneBlock Weight Value:4
+StoneBlockCrude Weight Value:4
+FrameBox Weight Value:4
+FrameDoor Weight Value:4
+FrameSquare Weight Value:2
+FrameTriangle Weight Value:2
+FrameWindow Weight Value:4
+Panel Weight Value:4
+WoodenBeam Weight Value:3
+MushroomSoup Weight Value:4
+MushroomStew Weight Value:6
+MushroomPieRaw Weight Value:8
+MushroomPie Weight Value:8
+MushroomPuddingRaw Weight Value:12
+MushroomPudding Weight Value:12
+MushroomBurger Weight Value:16
+BerriesStew Weight Value:4
+BerriesJam Weight Value:6
+BerriesPieRaw Weight Value:8
+BerriesPie Weight Value:8
+BerriesCakeRaw Weight Value:12
+BerriesCake Weight Value:12
+BerryDanish Weight Value:16
+BreadCrude Weight Value:4
+Bread Weight Value:6
+BreadButtered Weight Value:8
+BreadPuddingRaw Weight Value:12
+BreadPudding Weight Value:12
+CreamBrioche Weight Value:16
+PumpkinSoup Weight Value:4
+PumpkinStew Weight Value:6
+PumpkinPieRaw Weight Value:8
+PumpkinPie Weight Value:8
+PumpkinCake Weight Value:12
+PumpkinCakeRaw Weight Value:12
+PumpkinBurger Weight Value:16
+AppleStew Weight Value:4
+AppleJam Weight Value:6
+ApplePieRaw Weight Value:8
+ApplePie Weight Value:8
+AppleCakeRaw Weight Value:12
+AppleCake Weight Value:12
+AppleDanish Weight Value:16
+FishSoup Weight Value:4
+FishStew Weight Value:6
+FishPieRaw Weight Value:8
+FishPie Weight Value:8
+FishCakeRaw Weight Value:12
+FishCake Weight Value:12
+FishBurger Weight Value:16
+CarrotStirFry Weight Value:4
+CarrotHoney Weight Value:6
+CarrotCurry Weight Value:8
+CarrotCakeRaw Weight Value:12
+CarrotCake Weight Value:12
+CarrotBurger Weight Value:16
+MilkPorridge Weight Value:4
+FruitPorridge Weight Value:6
+HoneyPorridge Weight Value:6
+AppleBerryPieRaw Weight Value:12
+AppleBerryPie Weight Value:12
+PumpkinMushroomPieRaw Weight Value:12
+PumpkinMushroomPie Weight Value:12
+Naan Weight Value:6
+NaanRaw Weight Value:6
+CakeBatter Weight Value:2
+TopJumper Weight Value:4
+TopJacket Weight Value:8
+TopBlazer Weight Value:12
+TopTuxedo Weight Value:16
+TopDress Weight Value:4
+TopShirt Weight Value:8
+TopShirtTie Weight Value:12
+TopGown Weight Value:16
+TopRobe Weight Value:4
+TopCoat Weight Value:8
+TopCoatScarf Weight Value:12
+TopSuit Weight Value:16
+TopLumberjack Weight Value:8
+TopDungarees Weight Value:8
+Doll Weight Value:6
+JackInTheBox Weight Value:8
+DollHouse Weight Value:12
+Spaceship Weight Value:16
+TopMac Weight Value:8
+TopPlumber Weight Value:8
+TopTree Weight Value:8
+TopWally Weight Value:4
+TopJumper02 Weight Value:4
+TopDungareesClown Weight Value:8
+TopSanta Weight Value:8
+TopFox Weight Value:8
+TopDinosaur Weight Value:8
+TopBunny Weight Value:8
+TopDuck Weight Value:8
+TopTShirt02 Weight Value:4
+TopTShirtShow Weight Value:4
+TopApron Weight Value:4
+TopAdventurer Weight Value:4
+TopConstruction Weight Value:4
+TopPirate01 Weight Value:8
+TopPirate02 Weight Value:12
+TopPirate03 Weight Value:16
+ToyHorse Weight Value:6
+ToyHorseCart Weight Value:8
+ToyHorseCarriage Weight Value:12
+ToyTrain Weight Value:16
+AnimalChicken NoMultiple Value:1
+AnimalCow NoMultiple Value:1
+AnimalSheep NoMultiple Value:1
+AnimalAlpaca NoMultiple Value:1
+AnimalCowHighland NoMultiple Value:1
+Worker NoMultiple Value:1
+Folk NoMultiple Value:1
+Sign NoMultiple Value:1
+Sign2 NoMultiple Value:1
+Sign3 NoMultiple Value:1
+Billboard NoMultiple Value:1
+ToolShovel NoMultiple Value:1
+ToolShovelStone NoMultiple Value:1
+ToolHoe NoMultiple Value:1
+ToolHoeStone NoMultiple Value:1
+ToolAxe NoMultiple Value:1
+ToolAxeStone NoMultiple Value:1
+ToolScythe NoMultiple Value:1
+ToolScytheStone NoMultiple Value:1
+ToolPick NoMultiple Value:1
+ToolPickStone NoMultiple Value:1
+ToolBucketCrude NoMultiple Value:1
+ToolBucket NoMultiple Value:1
+ToolBucketMetal NoMultiple Value:1
+ToolMallet NoMultiple Value:1
+ToolChiselCrude NoMultiple Value:1
+ToolChisel NoMultiple Value:1
+ToolFlailCrude NoMultiple Value:1
+ToolFlail NoMultiple Value:1
+ToolShears NoMultiple Value:1
+ToolWateringCan NoMultiple Value:1
+ToolFishingStick NoMultiple Value:1
+ToolFishingRod NoMultiple Value:1
+ToolFishingRodGood NoMultiple Value:1
+ToolBroom NoMultiple Value:1
+ToolPitchfork NoMultiple Value:1
+ToolTorchCrude NoMultiple Value:1
+ToolDredgerCrude NoMultiple Value:1
+ToolNetCrude NoMultiple Value:1
+ToolNet NoMultiple Value:1
+ToolBlade NoMultiple Value:1
+SunRiseDelay Value:3
+DayTimeDelay Value:12
+SunSetDelay Value:3
+NightTimeDelay Value:3
+WheelBarrow WeightCapacity Value:20
+Cart WeightCapacity Value:32
+CartLiquid WeightCapacity Value:50
+Carriage WeightCapacity Value:50
+CarriageLiquid WeightCapacity Value:100
+CarriageTrain WeightCapacity Value:200
+Train MaxCarriages Value:2
+Train BaseDelay Value:0.1
+Train MaxWater Value:10
+Train MaxFuel Value:1500
+Train WaterUsePerSecond Value:0.1
+Train FuelUsePerSecond Value:6
+Train RefuellingTime Value:2
+Minecart MaxCarriages Value:1
+Minecart BaseDelay Value:0.1
+GiantWaterWheel EnergyCapacity Value:150
+Windmill EnergyCapacity Value:50
+StationaryEngine EnergyCapacity Value:1000
+StationaryEngine WaterCapacity Value:20
+FertiliserValueFood Value:0.25
+Fertiliser FertiliserValue Value:1
+Manure FertiliserValue Value:4
+Straw FertiliserValue Value:0.25
+TreeSeed FertiliserValue Value:0.25
+MulberrySeed FertiliserValue Value:0.25
+WheatSeed FertiliserValue Value:0.25
+CarrotSeed FertiliserValue Value:0.25
+Coconut FertiliserValue Value:0.25
+CottonSeeds FertiliserValue Value:0.25
+BullrushesSeeds FertiliserValue Value:0.25
+BullrushesStems FertiliserValue Value:0.25
+WeedDug FertiliserValue Value:0.5
+Pumpkin FertiliserValue Value:1
+GrassCut FertiliserValue Value:0.25
+Turf FertiliserValue Value:1
+Seedling FertiliserValue Value:0.25
+SeedlingMulberry FertiliserValue Value:0.25
+HayBale FertiliserValue Value:1
+Dough FertiliserValue Value:0.5
+DoughGood FertiliserValue Value:1
+Wheat FertiliserValue Value:1
+FlowerBunch01 FertiliserValue Value:0.5
+FlowerBunch02 FertiliserValue Value:0.5
+FlowerBunch03 FertiliserValue Value:0.5
+FlowerBunch04 FertiliserValue Value:0.5
+FlowerBunch05 FertiliserValue Value:0.5
+FlowerBunch06 FertiliserValue Value:0.5
+FlowerBunch07 FertiliserValue Value:0.5
+FlowerSeeds01 FertiliserValue Value:0.25
+FlowerSeeds02 FertiliserValue Value:0.25
+FlowerSeeds03 FertiliserValue Value:0.25
+FlowerSeeds04 FertiliserValue Value:0.25
+FlowerSeeds05 FertiliserValue Value:0.25
+FlowerSeeds06 FertiliserValue Value:0.25
+FlowerSeeds07 FertiliserValue Value:0.25
+Stick Fuel Value:10
+Pole Fuel Value:30
+Plank Fuel Value:60
+Log Fuel Value:120
+Charcoal Fuel Value:240
+Coal Fuel Value:500
+HayBale Fuel Value:10
+Fertiliser Fuel Value:3
+FirstTopTier Value:2
+TopPoncho Tier Value:2
+TopJumper Tier Value:3
+TopJacket Tier Value:4
+TopBlazer Tier Value:5
+TopTuxedo Tier Value:6
+TopTunic Tier Value:2
+TopDress Tier Value:3
+TopShirt Tier Value:4
+TopShirtTie Tier Value:5
+TopGown Tier Value:6
+TopToga Tier Value:2
+TopRobe Tier Value:3
+TopCoat Tier Value:4
+TopCoatScarf Tier Value:5
+TopSuit Tier Value:6
+TopTShirtShow Tier Value:3
+TopLumberjack Tier Value:4
+TopDungarees Tier Value:4
+TopAdventurer Tier Value:3
+TopMac Tier Value:4
+TopPlumber Tier Value:4
+TopTree Tier Value:4
+TopDungareesClown Tier Value:4
+TopJumper02 Tier Value:3
+TopApron Tier Value:3
+TopSanta Tier Value:4
+TopWally Tier Value:3
+TopTShirt02 Tier Value:3
+TopFox Tier Value:4
+TopDinosaur Tier Value:4
+TopBunny Tier Value:4
+TopDuck Tier Value:4
+TopConstruction Tier Value:2
+TopPirate01 Tier Value:4
+TopPirate02 Tier Value:5
+TopPirate03 Tier Value:6
+TopPoncho MaxUsage Value:1000
+TopJumper MaxUsage Value:10000
+TopJacket MaxUsage Value:100000
+TopBlazer MaxUsage Value:1000000
+TopTuxedo MaxUsage Value:10000000
+TopTunic MaxUsage Value:1000
+TopDress MaxUsage Value:10000
+TopShirt MaxUsage Value:100000
+TopShirtTie MaxUsage Value:1000000
+TopGown MaxUsage Value:10000000
+TopToga MaxUsage Value:1000
+TopRobe MaxUsage Value:10000
+TopCoat MaxUsage Value:100000
+TopCoatScarf MaxUsage Value:1000000
+TopSuit MaxUsage Value:10000000
+TopTShirtShow MaxUsage Value:10000
+TopLumberjack MaxUsage Value:100000
+TopDungarees MaxUsage Value:100000
+TopAdventurer MaxUsage Value:10000
+TopMac MaxUsage Value:100000
+TopPlumber MaxUsage Value:100000
+TopTree MaxUsage Value:100000
+TopDungareesClown MaxUsage Value:100000
+TopJumper02 MaxUsage Value:10000
+TopApron MaxUsage Value:10000
+TopSanta MaxUsage Value:100000
+TopWally MaxUsage Value:10000
+TopTShirt02 MaxUsage Value:10000
+TopFox MaxUsage Value:100000
+TopDinosaur MaxUsage Value:100000
+TopBunny MaxUsage Value:100000
+TopDuck MaxUsage Value:100000
+TopConstruction MaxUsage Value:1000
+TopPirate01 MaxUsage Value:100000
+TopPirate02 MaxUsage Value:1000000
+TopPirate03 MaxUsage Value:10000000
+FirstToyTier Value:3
+Doll Tier Value:3
+JackInTheBox Tier Value:4
+DollHouse Tier Value:5
+Spaceship Tier Value:6
+ToyHorse Tier Value:3
+ToyHorseCart Tier Value:4
+ToyHorseCarriage Tier Value:5
+ToyTrain Tier Value:6
+Doll MaxUsage Value:10000
+JackInTheBox MaxUsage Value:100000
+DollHouse MaxUsage Value:1000000
+Spaceship MaxUsage Value:10000000
+ToyHorse MaxUsage Value:10000
+ToyHorseCart MaxUsage Value:100000
+ToyHorseCarriage MaxUsage Value:1000000
+ToyTrain MaxUsage Value:10000000
+FirstMedicineTier Value:4
+MedicineLeeches Tier Value:4
+MedicineLeeches Weight Value:8
+MedicineLeeches MaxUsage Value:100000
+MedicineFlowers Tier Value:5
+MedicineFlowers Weight Value:12
+MedicineFlowers MaxUsage Value:1000000
+MedicinePills Tier Value:6
+MedicinePills Weight Value:16
+MedicinePills MaxUsage Value:10000000
+FirstEducationTier Value:5
+EducationBook1 Tier Value:5
+EducationBook1 Weight Value:12
+EducationBook1 MaxUsage Value:1000000
+EducationEncyclopedia Tier Value:6
+EducationEncyclopedia Weight Value:16
+EducationEncyclopedia MaxUsage Value:10000000
+Ink Weight Value:4
+Paper Weight Value:4
+FirstArtTier Value:6
+ArtPortrait Tier Value:6
+ArtPortrait Weight Value:16
+ArtPortrait MaxUsage Value:10000000
+ArtStillLife Tier Value:6
+ArtStillLife Weight Value:16
+ArtStillLife MaxUsage Value:10000000
+ArtAbstract Tier Value:6
+ArtAbstract Weight Value:16
+ArtAbstract MaxUsage Value:10000000
+Canvas Weight Value:2
+AnimalCow MaxFullTime Value:60
+AnimalSheep MaxFullTime Value:60
+AnimalCowHighland MaxFullTime Value:60
+AnimalAlpaca MaxFullTime Value:60
+MushroomPieRaw Tier Value:4
+BerriesPieRaw Tier Value:4
+FishPieRaw Tier Value:4
+ApplePieRaw Tier Value:4
+PumpkinPieRaw Tier Value:4
+BerriesCakeRaw Tier Value:5
+BreadPuddingRaw Tier Value:5
+AppleBerryPieRaw Tier Value:5
+PumpkinMushroomPieRaw Tier Value:5
+Folk Hidden Value:1
+Worker Hidden Value:1
+Water Hidden Value:1
+Milk Hidden Value:1
+Honey Hidden Value:1
+SeaWater Hidden Value:1
+Sand Hidden Value:1
+Soil Hidden Value:1
+Mortar Hidden Value:1
+Weed Hidden Value:1
+Grass Hidden Value:1
+CropWheat Hidden Value:1
+CropCotton Hidden Value:1
+CropCarrot Hidden Value:1
+TreePine Hidden Value:1
+TreeApple Hidden Value:1
+TreeCoconut Unlocked Value:1
+TreeMulberry Hidden Value:1
+TreeStump Hidden Value:1
+CropPumpkin Hidden Value:1
+Bush Hidden Value:1
+Hedge Hidden Value:1
+Mushroom Hidden Value:1
+FlowerWild Hidden Value:1
+Bullrushes Hidden Value:1
+AnimalBird Hidden Value:1
+AnimalBee Hidden Value:1
+ToolFishingRod MinDelay Value:4
+ToolFishingRod MaxDelay Value:8
+ToolFishingRod UseRange Value:5
+ToolFishingRodGood MinDelay Value:4
+ToolFishingRodGood MaxDelay Value:8
+ToolFishingRodGood UseRange Value:10
+ToolFishingStick FishChance Value:20
+ToolFishingStick FishChanceRare Value:0
+ToolFishingStick FishChanceSuperRare Value:0
+ToolFishingStick FishChanceBait Value:40
+ToolFishingStick FishChanceBaitRare Value:0
+ToolFishingStick FishChanceBaitSuperRare Value:0
+ToolFishingRod FishChance Value:40
+ToolFishingRod FishChanceRare Value:0
+ToolFishingRod FishChanceSuperRare Value:0
+ToolFishingRod FishChanceBait Value:60
+ToolFishingRod FishChanceBaitRare Value:1
+ToolFishingRod FishChanceBaitSuperRare Value:0
+ToolFishingRodGood FishChance Value:60
+ToolFishingRodGood FishChanceRare Value:1
+ToolFishingRodGood FishChanceSuperRare Value:0
+ToolFishingRodGood FishChanceBait Value:80
+ToolFishingRodGood FishChanceBaitRare Value:10
+ToolFishingRodGood FishChanceBaitSuperRare Value:1
+ShallowNormalFreshFish Value:0
+DeepNormalFreshFish Value:0
+DeepRareFreshFish Value:0
+DeepSuperRareFreshFish Value:0
+ShallowNormalSaltFish Value:0
+DeepNormalSaltFish Value:0
+DeepRareSaltFish Value:0
+DeepSuperRareSaltFish Value:0
+Triangle Sound Value:InstrumentTriangle
+Castanets Sound Value:InstrumentCastanets
+Cowbell Sound Value:InstrumentCowbell
+Guiro Sound Value:InstrumentGuiro
+Maracas Sound Value:InstrumentMaracas
+JawHarp Sound Value:InstrumentJawHarp
+Guitar Sound Value:InstrumentGuitar
+HayBale MaxEats Value:10
+Boulder MaxMined Value:20
+TallBoulder MaxMined1 Value:20
+TallBoulder MaxMined2 Value:30
+TallBoulder MaxMined3 Value:40
+PotClay MaxUsage Value:5
+LargeBowlClay MaxUsage Value:5
+JarClay MaxUsage Value:1
+CrudeStoneBlockCost Value:10
+Sign Range Value:16
+Sign2 Range Value:16
+Sign3 Range Value:35
+Billboard Range Value:20
+AnimalSilkworm ConversionDelay Value:10
+FolkSeedRehydrator_Food Value:100
+WorkbenchMk2 ConversionDelay Value:2
+WorkbenchStructural ConversionDelay Value:2
+Barn ConversionDelay Value:3
+ChoppingBlock ConversionDelay Value:5
+BenchSaw ConversionDelay Value:3
+BenchSaw2 ConversionDelay Value:1.5
+ButterChurn ConversionDelay Value:4
+Cauldron ConversionDelay Value:2.5
+CookingPotCrude ConversionDelay Value:3
+PotCrude ConversionDelay Value:3.5
+ClayFurnace ConversionDelay Value:3
+ChickenCoop ConversionDelay Value:3
+CogBench ConversionDelay Value:4
+ConverterFoundation ConversionDelay Value:3
+ClayStationCrude ConversionDelay Value:4
+ClayStation ConversionDelay Value:4
+KilnCrude ConversionDelay Value:4
+MortarMixerCrude ConversionDelay Value:4
+MortarMixerGood ConversionDelay Value:3
+FolkSeedPod ConversionDelay Value:2
+OvenCrude ConversionDelay Value:4
+Oven ConversionDelay Value:3
+StringWinderCrude ConversionDelay Value:3
+HatMaker ConversionDelay Value:4
+KitchenTable ConversionDelay Value:3
+BasicMetalWorkbench ConversionDelay Value:4
+MasonryBench ConversionDelay Value:4
+FolkSeedRehydrator ConversionDelay Value:3
+Quern ConversionDelay Value:4
+RockingChair ConversionDelay Value:5
+SewingStation ConversionDelay Value:3
+SpinningWheel ConversionDelay Value:2
+SpinningJenny ConversionDelay Value:2
+VehicleAssembler ConversionDelay Value:4
+VehicleAssemblerGood ConversionDelay Value:6
+WheatHammer ConversionDelay Value:2
+Gristmill ConversionDelay Value:2
+Workbench ConversionDelay Value:3
+WorkerAssembler ConversionDelay Value:3
+WorkerWorkbenchMk1 ConversionDelay Value:2
+WorkerWorkbenchMk2 ConversionDelay Value:2
+StorageFertiliser ConversionDelay Value:0.5
+LoomCrude ConversionDelay Value:2
+LoomGood ConversionDelay Value:3
+ToyStationCrude ConversionDelay Value:3
+MedicineStation ConversionDelay Value:3
+PrintingPress ConversionDelay Value:3
+PaperMill ConversionDelay Value:2
+Easel ConversionDelay Value:6
+CrudePlantBreedingStation ConversionDelay Value:6
+CrudeAnimalBreedingStation ConversionDelay Value:6
+HayBalerCrude ConversionDelay Value:1
+TranscendBuilding ConversionDelay Value:3
+WorkerWorkbenchMk3 ConversionDelay Value:2
+MetalWorkbench ConversionDelay Value:3
+Furnace ConversionDelay Value:2
+Ziggurat ConversionDelay Value:3
+StorageFertiliser BuildDelay Value:3
+StorageLiquid BuildDelay Value:3
+StorageSand BuildDelay Value:3
+StorageSeedlings BuildDelay Value:3
+StorageWorker BuildDelay Value:4
+StorageGeneric BuildDelay Value:3
+StorageBeehiveCrude BuildDelay Value:4
+StorageBeehive BuildDelay Value:5
+StorageLiquidMedium BuildDelay Value:4
+StorageSandMedium BuildDelay Value:4
+StorageGenericMedium BuildDelay Value:4
+StoragePaletteMedium BuildDelay Value:4
+StoragePalette BuildDelay Value:2
+ConverterFoundation BuildDelay Value:2
+ChoppingBlock BuildDelay Value:3
+BenchSaw BuildDelay Value:3
+BenchSaw2 BuildDelay Value:2
+Workbench BuildDelay Value:2
+BasicMetalWorkbench BuildDelay Value:3
+WorkerAssembler BuildDelay Value:3
+WheatHammer BuildDelay Value:3
+CogBench BuildDelay Value:4
+Windmill BuildDelay Value:6
+Gristmill BuildDelay Value:3
+CookingPotCrude BuildDelay Value:2
+ClayFurnace BuildDelay Value:4
+HatMaker BuildDelay Value:3
+ButterChurn BuildDelay Value:4
+KitchenTable BuildDelay Value:2
+SpinningWheel BuildDelay Value:4
+SpinningJenny BuildDelay Value:4
+RockingChair BuildDelay Value:4
+SewingStation BuildDelay Value:4
+OvenCrude BuildDelay Value:3
+Oven BuildDelay Value:3
+KilnCrude BuildDelay Value:4
+Cauldron BuildDelay Value:4
+MortarMixerCrude BuildDelay Value:1
+MortarMixerGood BuildDelay Value:3
+Quern BuildDelay Value:2
+WorkerWorkbenchMk1 BuildDelay Value:3
+WorkerWorkbenchMk2 BuildDelay Value:3
+ClayStationCrude BuildDelay Value:2
+ClayStation BuildDelay Value:2
+FolkSeedRehydrator BuildDelay Value:3
+StringWinderCrude BuildDelay Value:2
+Barn BuildDelay Value:6
+ChickenCoop BuildDelay Value:3
+Aquarium BuildDelay Value:5
+VehicleAssembler BuildDelay Value:4
+VehicleAssemblerGood BuildDelay Value:6
+WorkbenchMk2 BuildDelay Value:3
+WorkbenchStructural BuildDelay Value:3
+FolkSeedPod BuildDelay Value:5
+PotCrude BuildDelay Value:1
+MasonryBench BuildDelay Value:2
+LoomCrude BuildDelay Value:4
+LoomGood BuildDelay Value:5
+ToyStationCrude BuildDelay Value:4
+MedicineStation BuildDelay Value:5
+PrintingPress BuildDelay Value:5
+PaperMill BuildDelay Value:5
+Easel BuildDelay Value:3
+MetalWorkbench BuildDelay Value:5
+CrudePlantBreedingStation BuildDelay Value:3
+CrudeAnimalBreedingStation BuildDelay Value:3
+MilkingShedCrude BuildDelay Value:4
+ShearingShedCrude BuildDelay Value:4
+SilkwormStation BuildDelay Value:4
+HayBalerCrude BuildDelay Value:4
+Trough BuildDelay Value:2
+Furnace BuildDelay Value:5
+WorkerWorkbenchMk3 BuildDelay Value:5
+ResearchStationCrude BuildDelay Value:3
+ResearchStationCrude2 BuildDelay Value:3
+ResearchStationCrude3 BuildDelay Value:3
+ResearchStationCrude4 BuildDelay Value:3
+ResearchStationCrude5 BuildDelay Value:3
+ResearchStationCrude6 BuildDelay Value:3
+Hut BuildDelay Value:3
+LogCabin BuildDelay Value:4
+StoneCottage BuildDelay Value:4
+FencePost BuildDelay Value:1
+StoneWall BuildDelay Value:3
+Gate BuildDelay Value:2
+Bridge BuildDelay Value:4
+SandPath BuildDelay Value:1
+StonePath BuildDelay Value:1
+StoneArch BuildDelay Value:3
+BrickWall BuildDelay Value:5
+Door BuildDelay Value:3
+Window BuildDelay Value:2
+FencePicket BuildDelay Value:2
+GatePicket BuildDelay Value:3
+LogWall BuildDelay Value:2
+LogArch BuildDelay Value:3
+BlockWall BuildDelay Value:5
+BeltLinkage BuildDelay Value:2
+RoadCrude BuildDelay Value:1
+StoneArchDoor BuildDelay Value:3
+BlockDoor BuildDelay Value:3
+WindowStone BuildDelay Value:2
+BridgeStone BuildDelay Value:4
+RoadGood BuildDelay Value:1
+FlooringBrick BuildDelay Value:3
+FlooringFlagstone BuildDelay Value:3
+FlooringParquet BuildDelay Value:3
+FlooringCrude BuildDelay Value:2
+Workshop BuildDelay Value:3
+BrickHut BuildDelay Value:5
+Mansion BuildDelay Value:5
+Castle BuildDelay Value:5
+StationaryEngine BuildDelay Value:5
+TrainTrack BuildDelay Value:2
+TrainTrackCurve BuildDelay Value:4
+TrainTrackPointsLeft BuildDelay Value:5
+TrainTrackPointsRight BuildDelay Value:5
+TrainTrackBuffer BuildDelay Value:3
+TrainTrackStop BuildDelay Value:3
+TrainRefuellingStation BuildDelay Value:3
+TrainTrackBridge BuildDelay Value:4
+TranscendBuilding BuildDelay Value:6
+Ziggurat BuildDelay Value:6
+StoneHenge BuildDelay Value:8
+StoneHeads BuildDelay Value:4
+GiantWaterWheel BuildDelay Value:8
+SpacePort BuildDelay Value:8
+Catapult BuildDelay Value:4
+Wardrobe BuildDelay Value:4
+BotServer BuildDelay Value:6
+MasonryBench Floors Value:1
+CogBench Floors Value:1
+WorkbenchStructural Floors Value:1
+StringWinderCrude Floors Value:1
+OvenCrude Floors Value:1
+ClayFurnace Floors Value:1
+BenchSaw Floors Value:1
+WheatHammer Floors Value:1
+WorkerWorkbenchMk2 Floors Value:1
+Gristmill Walls Value:1
+Gristmill Floors Value:1
+BenchSaw2 Walls Value:1
+BenchSaw2 Floors Value:1
+BasicMetalWorkbench Walls Value:1
+BasicMetalWorkbench Floors Value:1
+HatMaker Walls Value:1
+HatMaker Floors Value:1
+ButterChurn Walls Value:1
+ButterChurn Floors Value:1
+KitchenTable Walls Value:1
+KitchenTable Floors Value:1
+SpinningWheel Walls Value:1
+SpinningWheel Floors Value:1
+SpinningJenny Walls Value:1
+SpinningJenny Floors Value:1
+SilkwormStation Walls Value:1
+SilkwormStation Floors Value:1
+Oven Walls Value:1
+Oven Floors Value:1
+Cauldron Walls Value:1
+Cauldron Floors Value:1
+ClayStation Walls Value:1
+ClayStation Floors Value:1
+VehicleAssembler Walls Value:1
+VehicleAssembler Floors Value:1
+LoomCrude Walls Value:1
+LoomCrude Floors Value:1
+LoomGood Walls Value:1
+LoomGood Floors Value:1
+SewingStation Walls Value:1
+SewingStation Floors Value:1
+ToyStationCrude Walls Value:1
+ToyStationCrude Floors Value:1
+MedicineStation Walls Value:1
+MedicineStation Floors Value:1
+PrintingPress Walls Value:1
+PrintingPress Floors Value:1
+PaperMill Walls Value:1
+PaperMill Floors Value:1
+WorkerWorkbenchMk3 Walls Value:1
+WorkerWorkbenchMk3 Floors Value:1
+MetalWorkbench Walls Value:1
+MetalWorkbench Floors Value:1
+StationaryEngine Walls Value:1
+StationaryEngine Floors Value:1
+Furnace Walls Value:1
+Furnace Floors Value:1
+Easel Walls Value:1
+Easel Floors Value:1
+Windmill RechargeTime Value:15
+GiantWaterWheel RechargeTime Value:10
+FirstHousingTier Value:1
+Hut Tier Value:1
+LogCabin Tier Value:2
+StoneCottage Tier Value:3
+BrickHut Tier Value:4
+Mansion Tier Value:5
+Castle Tier Value:6
+Hut MaxUsage Value:100
+LogCabin MaxUsage Value:1000
+StoneCottage MaxUsage Value:10000
+BrickHut MaxUsage Value:100000
+Mansion MaxUsage Value:1000000
+Castle MaxUsage Value:10000000
+Hut RepairObject Value:217
+Hut RepairAmount Value:2
+LogCabin RepairObject Value:218
+LogCabin RepairAmount Value:4
+StoneCottage RepairObject Value:215
+StoneCottage RepairAmount Value:5
+BrickHut RepairObject Value:262
+BrickHut RepairAmount Value:5
+Mansion RepairObject Value:262
+Mansion RepairAmount Value:7
+Castle RepairObject Value:250
+Castle RepairAmount Value:10
+StorageCapacityHeight2 Value:2.4
+StorageCapacityHeight3 Value:4
+StorageGeneric UpgradeTo Value:55
+StorageGenericMedium UpgradeFrom Value:54
+StorageLiquid UpgradeTo Value:59
+StorageLiquidMedium UpgradeFrom Value:58
+StoragePalette UpgradeTo Value:57
+StoragePaletteMedium UpgradeFrom Value:56
+StorageSand UpgradeTo Value:63
+StorageSandMedium UpgradeFrom Value:62
+ClayStationCrude UpgradeTo Value:143
+ClayStation UpgradeFrom Value:142
+Quern UpgradeTo Value:88
+Gristmill UpgradeFrom Value:87
+OvenCrude UpgradeTo Value:92
+Oven UpgradeFrom Value:91
+PotCrude UpgradeTo Value:85
+CookingPotCrude UpgradeFrom Value:84
+CookingPotCrude UpgradeTo Value:86
+Cauldron UpgradeFrom Value:85
+ClayFurnace UpgradeTo Value:145
+Furnace UpgradeFrom Value:144
+WorkerWorkbenchMk1 UpgradeTo Value:50
+WorkerWorkbenchMk2 UpgradeFrom Value:49
+WorkerWorkbenchMk2 UpgradeTo Value:51
+WorkerWorkbenchMk3 UpgradeFrom Value:50
+BenchSaw UpgradeTo Value:43
+BenchSaw2 UpgradeFrom Value:42
+ResearchStationCrude UpgradeTo Value:75
+ResearchStationCrude2 UpgradeFrom Value:74
+ResearchStationCrude2 UpgradeTo Value:76
+ResearchStationCrude3 UpgradeFrom Value:75
+ResearchStationCrude3 UpgradeTo Value:77
+ResearchStationCrude4 UpgradeFrom Value:76
+ResearchStationCrude4 UpgradeTo Value:78
+ResearchStationCrude5 UpgradeFrom Value:77
+ResearchStationCrude5 UpgradeTo Value:79
+ResearchStationCrude6 UpgradeFrom Value:78
+BasicMetalWorkbench UpgradeTo Value:48
+MetalWorkbench UpgradeFrom Value:47
+MortarMixerCrude UpgradeTo Value:150
+MortarMixerGood UpgradeFrom Value:149
+BasicMetalWorkbench LinkedEnergy Value:50
+MetalWorkbench LinkedEnergy Value:100
+BenchSaw2 LinkedEnergy Value:50
+ClayStation LinkedEnergy Value:50
+Gristmill LinkedEnergy Value:50
+SewingStation LinkedEnergy Value:50
+Ziggurat LinkedEnergy Value:50
+MedicineStation LinkedEnergy Value:120
+PaperMill LinkedEnergy Value:100
+PrintingPress LinkedEnergy Value:200
+VehicleAssemblerGood LinkedEnergy Value:500
+SpinningJenny LinkedEnergy Value:50
+TranscendBuilding LinkedEnergy Value:1000
+LoomGood LinkedEnergy Value:100
+WorkerWorkbenchMk3 LinkedEnergy Value:50
+MortarMixerGood LinkedEnergy Value:50
+Aquarium Capacity Value:10
+SilkwormStation Capacity Value:10
+SilkwormStation FuelCapacity Value:10
+UpgradePlayerWhistleCrude PrizeCost Value:10
+UpgradePlayerWhistleGood PrizeCost Value:10
+UpgradePlayerWhistleSuper PrizeCost Value:10
+Castanets PrizeCost Value:10
+Guiro PrizeCost Value:10
+Maracas PrizeCost Value:10
+Guitar PrizeCost Value:20
+Triangle PrizeCost Value:30
+Cowbell PrizeCost Value:30
+JawHarp PrizeCost Value:30
+AnimalPetDog PrizeCost Value:300
+AnimalPetDog2 PrizeCost Value:300
+HatFrog PrizeCost Value:20
+HatPanda PrizeCost Value:20
+HatPenguin PrizeCost Value:20
+HatBearskin PrizeCost Value:20
+HatCaptain PrizeCost Value:20
+HatCowboy PrizeCost Value:20
+HatBoater PrizeCost Value:20
+HatCatintheHat PrizeCost Value:20
+HatDrumMajor PrizeCost Value:20
+HatGat PrizeCost Value:20
+HatFedora PrizeCost Value:20
+HatSombrero PrizeCost Value:20
+HatSmurf PrizeCost Value:20
+HatTrafficCone PrizeCost Value:20
+HatWig02 PrizeCost Value:20
+TopFrog PrizeCost Value:20
+TopPanda PrizeCost Value:20
+TopPenguin PrizeCost Value:20
+TopRoyalGuard PrizeCost Value:20
+TopSuit02 PrizeCost Value:20
+TrojanRabbit PrizeCost Value:50
+WorkerDriveROB PrizeCost Value:10
+WorkerHeadROB PrizeCost Value:10
+WorkerFrameROB PrizeCost Value:10
+FlooringChequer PrizeCost Value:20
+BrickArchway PrizeCost Value:10
+BrickArchwayDoor PrizeCost Value:10
+HedgeArchway PrizeCost Value:10
+Sandcastle PrizeCost Value:10
+CastleWall PrizeCost Value:10
+CastlePlainTower PrizeCost Value:10
+CastleFancyTower PrizeCost Value:20
+CastleGate PrizeCost Value:20
+CastleDrawbridge PrizeCost Value:30
+StreetLamp PrizeCost Value:30
+AquariumGood PrizeCost Value:50
+Nothing DisableMission Value:1
+Empty DisableMission Value:1
+Plot DisableMission Value:1
+FarmerPlayer DisableMission Value:1
+BasicWorker DisableMission Value:1
+Worker DisableMission Value:1
+TutorBot DisableMission Value:1
+Weed DisableMission Value:1
+Grass DisableMission Value:1
+CropWheat DisableMission Value:1
+CropCotton DisableMission Value:1
+CropCarrot DisableMission Value:1
+TreeCoconut DisableMission Value:1
+TreePine DisableMission Value:1
+TreeApple DisableMission Value:1
+TreeMulberry DisableMission Value:1
+TreeStump DisableMission Value:1
+CropPumpkin DisableMission Value:1
+Bush DisableMission Value:1
+Hedge DisableMission Value:1
+Mushroom DisableMission Value:1
+FlowerWild DisableMission Value:1
+Bullrushes DisableMission Value:1
+AnimalBird DisableMission Value:1
+AnimalBee DisableMission Value:1
+AnimalSilkmoth DisableMission Value:1
+Boulder DisableMission Value:1
+TallBoulder DisableMission Value:1
+BeesNest DisableMission Value:1
+FolkHeart DisableMission Value:1
+FolkHeart2 DisableMission Value:1
+FolkHeart3 DisableMission Value:1
+FolkHeart4 DisableMission Value:1
+FolkHeart5 DisableMission Value:1
+FolkHeart6 DisableMission Value:1
+FolkHeart7 DisableMission Value:1
+MissionAmountTier0 Value:50
+MissionAmountTier1 Value:45
+MissionAmountTier2 Value:40
+MissionAmountTier3 Value:35
+MissionAmountTier4 Value:30
+MissionAmountTier5 Value:25
+MissionAmountTier6 Value:20
+MissionAmountTier7 Value:10
+Canoe MissionAmount Value:20
+Cart MissionAmount Value:20
+WheelBarrow MissionAmount Value:20
+Carriage MissionAmount Value:10
+CarriageLiquid MissionAmount Value:10
+CarriageTrain MissionAmount Value:10
+CartLiquid MissionAmount Value:10
+Minecart MissionAmount Value:10
+Train MissionAmount Value:10
+CraneCrude MissionAmount Value:10
+FishCarp MissionAmount Value:3
+FishOrangeRoughy MissionAmount Value:3
+FishMonkfish MissionAmount Value:3
+FishPerch MissionAmount Value:3
+FishCatFish MissionAmount Value:1
+FishGar MissionAmount Value:1
+FishMarlin MissionAmount Value:1
+FishMahiMahi MissionAmount Value:1
+TopFrog Weight Value:1
+TopFrog Tier Value:2
+TopFrog MaxUsage Value:1000
+TopPanda Weight Value:1
+TopPanda Tier Value:2
+TopPanda MaxUsage Value:1000
+TopPenguin Weight Value:1
+TopPenguin Tier Value:2
+TopPenguin MaxUsage Value:1000
+TopRoyalGuard Weight Value:1
+TopRoyalGuard Tier Value:2
+TopRoyalGuard MaxUsage Value:1000
+TopSuit02 Weight Value:1
+TopSuit02 Tier Value:2
+TopSuit02 MaxUsage Value:1000
+TrojanRabbit WeightCapacity Value:100
+FlooringChequer BuildDelay Value:2
+BrickArchway BuildDelay Value:2
+BrickArchwayDoor BuildDelay Value:2
+HedgeArchway BuildDelay Value:2
+Sandcastle BuildDelay Value:2
+CastleWall BuildDelay Value:2
+CastlePlainTower BuildDelay Value:2
+CastleFancyTower BuildDelay Value:2
+CastleGate BuildDelay Value:2
+CastleDrawbridge BuildDelay Value:2
+StreetLamp BuildDelay Value:2
+AquariumGood BuildDelay Value:5
+CastleGate Width Value:3
+CastleGate Height Value:1
+CastleGate Walkable Value:1
+CastleDrawbridge Width Value:3
+CastleDrawbridge Height Value:3
+BrickArchway Walkable Value:1
+HedgeArchway Walkable Value:1
+RegularMissionTickets Value:10
+DailyMissionTickets Value:100
+MissionAmountVariation Value:50
+ReputationPointsRegular Value:1
+ReputationPointsDaily Value:10
+Castanets NoMultiple Value:1
+Guiro NoMultiple Value:1
+Maracas NoMultiple Value:1
+Guitar NoMultiple Value:1
+Triangle NoMultiple Value:1
+Cowbell NoMultiple Value:1
+JawHarp NoMultiple Value:1
+AnimalPetDog NoMultiple Value:1
+AnimalPetDog2 NoMultiple Value:1
+UpgradePlayerWhistleCrude CallSound Value:WhistleBlown2
+UpgradePlayerWhistleCrude CancelSound Value:WhistleCancel2
+UpgradePlayerWhistleCrude DropAllSound Value:WhistleDropAll2
+UpgradePlayerWhistleCrude ToMeSound Value:WhistleToMe2
+UpgradePlayerWhistleGood CallSound Value:WhistleBlown3
+UpgradePlayerWhistleGood CancelSound Value:WhistleCancel3
+UpgradePlayerWhistleGood DropAllSound Value:WhistleDropAll3
+UpgradePlayerWhistleGood ToMeSound Value:WhistleToMe3
+UpgradePlayerWhistleSuper CallSound Value:WhistleBlown4
+UpgradePlayerWhistleSuper CancelSound Value:WhistleCancel4
+UpgradePlayerWhistleSuper DropAllSound Value:WhistleDropAll4
+UpgradePlayerWhistleSuper ToMeSound Value:WhistleToMe4
+AquariumGood Capacity Value:20
