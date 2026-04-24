@@ -54,6 +54,7 @@ public class ModnautWorld
             {
                 return;
             }
+            //SaveLoadManager.m_EmptyWorld
             //
             m_Options = new GameOptions();
             m_Options.m_MapTileData = null;
