@@ -1,13 +1,5 @@
-﻿using BepInEx.Logging;
-using HarmonyLib;
-using Modnauts;
+﻿using Modnauts;
 using MoonSharp.Interpreter;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 
 
 [MoonSharpUserData]

@@ -16,9 +16,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
 	<PackageReference Include="UnityEngine.Modules" Version="2018.4.35" IncludeAssets="compile" />
   </ItemGroup>
 
@@ -27,15 +24,48 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Autonauts\Autonauts_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Autonauts\Autonauts_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="HarmonyXInterop">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\HarmonyXInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\..\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\core\MonoMod.Utils.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="start XCOPY /Y /R &quot;$(SolutionDir)bin\$(ConfigurationName)\net46\Modnauts.*&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\plugins\&quot;&#xD;&#xA;" />
+    <Exec Command="start XCOPY /Y /R &quot;$(SolutionDir)bin\$(ConfigurationName)\net46\Modnauts.*&quot; &quot;C:\Program Files (x86)\Steam\steamapps\common\Autonauts\BepInEx\plugins\Modnauts\&quot;&#xD;&#xA;" />
   </Target>
 </Project>
