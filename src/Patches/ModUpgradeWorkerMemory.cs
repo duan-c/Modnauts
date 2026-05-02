@@ -2,7 +2,6 @@
 using System;
 using UnityEngine;
 
-[MoonSharpUserData]
 public class ModUpgradeWorkerMemory : ModCustom
 {
     public override void Init()
