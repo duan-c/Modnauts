@@ -16,7 +16,7 @@ public class ModUpgradePlayerWhistle : ModCustom
 
     public override ObjectSubCategory GetSubcategory()
     {
-        return ObjectSubCategory.BotsUpgrades;
+        return ObjectSubCategory.Misc;
     }
 
     public override bool GetStackable()
