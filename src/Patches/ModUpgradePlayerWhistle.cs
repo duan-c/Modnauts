@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-public class ModUpgradePlayerMovement : ModCustom
+public class ModUpgradePlayerWhistle : ModCustom
 {
     public override void Init()
     {
@@ -11,12 +11,12 @@ public class ModUpgradePlayerMovement : ModCustom
 
     public override string GetPrefabLocation()
     {
-        return "WorldObjects/Upgrades/UpgradePlayerMovement";
+        return "WorldObjects/Upgrades/UpgradePlayerWhistleCrude";
     }
 
     public override ObjectSubCategory GetSubcategory()
     {
-        return ObjectSubCategory.Misc;
+        return ObjectSubCategory.BotsUpgrades;
     }
 
     public override bool GetStackable()
@@ -24,17 +24,17 @@ public class ModUpgradePlayerMovement : ModCustom
         return true;
     }
 
-    public void CreateUpgradePlayerMovement(string UniqueName, int Level, float Delay, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+    public void CreateUpgradePlayerWhistle(string UniqueName, int Level, string CallSound, string CancelSound, string DropAllSound, string ToMeSound, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {
         if (UniqueName.Length == 0)
         {
-            string descriptionOverride = "Error: ModUpgradePlayerMovement.CreateUpgradePlayerMovement '" + UniqueName + "' - Unique Name is null length";
+            string descriptionOverride = "Error: ModUpgradePlayerWhistle.CreateUpgradePlayerWhistle '" + UniqueName + "' - Unique Name is null length";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride);
             return;
         }
         if (NewIngredientsStringArr != null && NewIngredientsStringArr.Length != NewIngredientsAmountArr.Length)
         {
-            string descriptionOverride2 = "Error: ModUpgradePlayerMovement.CreateUpgradePlayerMovement '" + UniqueName + "' - Ingredients and Ingredient amounts not equal";
+            string descriptionOverride2 = "Error: ModUpgradePlayerWhistle.CreateUpgradePlayerWhistle '" + UniqueName + "' - Ingredients and Ingredient amounts not equal";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride2);
             return;
         }
@@ -50,7 +50,7 @@ public class ModUpgradePlayerMovement : ModCustom
         {
             if (ModManager.Instance.GetModObjectTypeFromName(UniqueName) != ObjectType.Nothing)
             {
-                string descriptionOverride3 = "Error: ModUpgradePlayerMovement.CreateUpgradePlayerMovement '" + UniqueName + "' - already used this name!";
+                string descriptionOverride3 = "Error: ModUpgradePlayerWhistle.CreateUpgradePlayerWhistle '" + UniqueName + "' - already used this name!";
                 ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride3);
                 return;
             }
@@ -61,14 +61,14 @@ public class ModUpgradePlayerMovement : ModCustom
             HasSetRecipe.Add(objectType, false);
             if (ModelName.Length == 0)
             {
-                ModelName = "Models/Upgrades/UpgradePlayerMovementCrude";
+                ModelName = "Models/Upgrades/UpgradePlayerWhistleCrude";
             }
             ModModels.Add(objectType, ModelName);
             ModModelsCustom.Add(objectType, UsingCustomModel);
             ModManager.Instance.AddModString(objectType, UniqueName);
             if (DebugInfo)
             {
-                Debug.Log("ADDED NEW UPGRADE PLAYER MOVEMENT CALLED " + UniqueName + " (" + UniqueName + ")  ObjID " + objectType);
+                Debug.Log("ADDED NEW UPGRADE PLAYER WHISTLE CALLED " + UniqueName + " (" + UniqueName + ")  ObjID " + objectType);
             }
             ModManager.Instance.CustomCreations++;
             Mod lastCalledMod = ModManager.Instance.GetLastCalledMod();
@@ -77,7 +77,7 @@ public class ModUpgradePlayerMovement : ModCustom
                 lastCalledMod.CustomIDs.Add(objectType);
                 return;
             }
-            string descriptionOverride4 = "Error: ModUpgradePlayerMovement.CreateUpgradePlayerMovement - Cannot find Lua Script";
+            string descriptionOverride4 = "Error: ModUpgradePlayerWhistle.CreateUpgradePlayerWhistle - Cannot find Lua Script";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride4);
             return;
         }
@@ -94,7 +94,7 @@ public class ModUpgradePlayerMovement : ModCustom
                     result = ModManager.Instance.GetModObjectTypeFromName(NewIngredientsStringArr[i]);
                     if (result == ObjectType.Nothing)
                     {
-                        string descriptionOverride5 = "Error: ModUpgradePlayerMovement.CreateUpgradePlayerMovement - Object Ingredient '" + NewIngredientsStringArr[i] + "' - cannot be found";
+                        string descriptionOverride5 = "Error: ModUpgradePlayerWhistle.CreateUpgradePlayerWhistle - Object Ingredient '" + NewIngredientsStringArr[i] + "' - cannot be found";
                         ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride5);
                         return;
                     }
@@ -107,6 +107,9 @@ public class ModUpgradePlayerMovement : ModCustom
         }
         VariableManager.Instance.SetVariable(modObjectTypeFromName, "Unlocked", 1);
         VariableManager.Instance.SetVariable(modObjectTypeFromName, "Level", Level);
-        VariableManager.Instance.SetVariable(modObjectTypeFromName, "Delay", Delay);
+        VariableManager.Instance.SetVariable(modObjectTypeFromName, "CallSound", CallSound);
+        VariableManager.Instance.SetVariable(modObjectTypeFromName, "CancelSound", CancelSound);
+        VariableManager.Instance.SetVariable(modObjectTypeFromName, "DropAllSound", DropAllSound);
+        VariableManager.Instance.SetVariable(modObjectTypeFromName, "ToMeSound", ToMeSound);
     }
 }

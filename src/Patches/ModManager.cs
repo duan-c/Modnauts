@@ -5,6 +5,7 @@ public static class ModManagerExtensions
 {
     public static ModUpgradePlayerInventory ModUpgradePlayerInventoryClass = new ModUpgradePlayerInventory();
     public static ModUpgradePlayerMovement ModUpgradePlayerMovementClass = new ModUpgradePlayerMovement();
+    public static ModUpgradePlayerWhistle ModUpgradePlayerWhistleClass = new ModUpgradePlayerWhistle();
     public static ModUpgradeWorkerInventory ModUpgradeWorkerInventoryClass = new ModUpgradeWorkerInventory();
     public static ModUpgradeWorkerCarry ModUpgradeWorkerCarryClass = new ModUpgradeWorkerCarry();
     public static ModUpgradeWorkerEnergy ModUpgradeWorkerEnergyClass = new ModUpgradeWorkerEnergy();
@@ -18,6 +19,7 @@ public static class ModManagerExtensions
         //our Mod Classes will always be available just like the base game ones
         public ModUpgradePlayerInventory ModUpgradePlayerInventoryClass => ModManagerExtensions.ModUpgradePlayerInventoryClass;
         public ModUpgradePlayerMovement ModUpgradePlayerMovementClass => ModManagerExtensions.ModUpgradePlayerMovementClass;
+        public ModUpgradePlayerWhistle ModUpgradePlayerWhistleClass => ModManagerExtensions.ModUpgradePlayerWhistleClass;
         public ModUpgradeWorkerInventory ModUpgradeWorkerInventoryClass => ModManagerExtensions.ModUpgradeWorkerInventoryClass;
         public ModUpgradeWorkerCarry ModUpgradeWorkerCarryClass => ModManagerExtensions.ModUpgradeWorkerCarryClass;
         public ModUpgradeWorkerEnergy ModUpgradeWorkerEnergyClass => ModManagerExtensions.ModUpgradeWorkerEnergyClass;
@@ -43,6 +45,8 @@ class ModManager_Start
             __instance.ModUpgradePlayerInventoryClass.Init();
             __instance.ModCustomClasses.Add(__instance.ModUpgradePlayerMovementClass);
             __instance.ModUpgradePlayerMovementClass.Init();
+            __instance.ModCustomClasses.Add(__instance.ModUpgradePlayerWhistleClass);
+            __instance.ModUpgradePlayerWhistleClass.Init();
             __instance.ModCustomClasses.Add(__instance.ModUpgradeWorkerInventoryClass);
             __instance.ModUpgradeWorkerInventoryClass.Init();
             __instance.ModCustomClasses.Add(__instance.ModUpgradeWorkerCarryClass);

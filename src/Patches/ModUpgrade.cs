@@ -5,7 +5,6 @@ using UnityEngine;
 [MoonSharpUserData]
 public class ModUpgrade
 {
-    //TODO: CreateUpgradePlayerWhistle
     //TODO: CreateSign
     public void CreateUpgradePlayerInventory(string UniqueName, int Level, int Capacity, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {
@@ -14,6 +13,10 @@ public class ModUpgrade
     public void CreateUpgradePlayerMovement(string UniqueName, int Level, float Delay, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {
         ModManager.Instance.ModUpgradePlayerMovementClass.CreateUpgradePlayerMovement(UniqueName, Level, Delay, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+    }
+    public void CreateUpgradePlayerWhistle(string UniqueName, int Level, string CallSound, string CancelSound, string DropAllSound, string ToMeSound, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+    {
+        ModManager.Instance.ModUpgradePlayerWhistleClass.CreateUpgradePlayerWhistle(UniqueName, Level, CallSound, CancelSound, DropAllSound, ToMeSound, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
     }
     public void CreateUpgradeWorkerInventory(string UniqueName, int Level, int Capacity, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {

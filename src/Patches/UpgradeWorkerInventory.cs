@@ -24,27 +24,3 @@ class UpgradeWorkerInventory_GetIsTypeUpgradeWorkerInventory
         }
     }
 }
-
-
-[HarmonyPatch(typeof(UpgradeWorkerInventory))]
-[HarmonyPatch("PostCreate")]
-class UpgradeWorkerInventory_PostCreate
-{
-    static void Postfix(UpgradeWorkerInventory __instance)
-    {
-        try
-        {
-            //standard upgrades has Level set in the Prefab, we override it via Variable for custom upgrades
-            if (ModManager.Instance.ModUpgradeWorkerInventoryClass.IsItCustomType(__instance.m_TypeIdentifier))
-            {
-                __instance.m_Level = VariableManager.Instance.GetVariableAsInt(__instance.m_TypeIdentifier, "Level", false);
-            }
-        }
-        catch (System.Exception ex)
-        {
-            ModnautsPlugin.Logger.LogError($"Error in UpgradeWorkerInventory_PostCreate patch: {ex}");
-        }
-    }
-}
-
-
