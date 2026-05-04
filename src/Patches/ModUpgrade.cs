@@ -1,6 +1,5 @@
 ﻿using MoonSharp.Interpreter;
 using System;
-using UnityEngine;
 
 [MoonSharpUserData]
 public class ModUpgrade

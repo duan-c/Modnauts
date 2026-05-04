@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(FarmerUpgrades))]
 [HarmonyPatch("GetContainsUpgradePlayerMovement")]
@@ -12,7 +9,7 @@ class FarmerUpgrades_GetContainsUpgradePlayerMovement
     {
         try
         {
-            //allow custom carry upgrades to be recognized as carry upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom movement upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             var movementUpgrade = __instance.GetMovementUpgrade();
             if (ModManager.Instance.ModUpgradePlayerMovementClass.IsItCustomType(movementUpgrade))
             {

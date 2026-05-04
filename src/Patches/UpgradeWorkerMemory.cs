@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradeWorkerMemory))]
 [HarmonyPatch("GetIsTypeUpgradeWorkerMemory")]
@@ -12,7 +9,7 @@ class UpgradeWorkerMemory_GetIsTypeUpgradeWorkerMemory
     {
         try
         {
-            //allow custom memory upgrades to be recognized as memory upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom memory upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradeWorkerMemoryClass.IsItCustomType(NewType))
             {
                 __result = true;

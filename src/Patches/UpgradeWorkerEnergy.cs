@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradeWorkerEnergy))]
 [HarmonyPatch("GetIsTypeUpgradeWorkerEnergy")]
@@ -12,7 +9,7 @@ class UpgradeWorkerEnergy_GetIsTypeUpgradeWorkerEnergy
     {
         try
         {
-            //allow custom energy upgrades to be recognized as energy upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom energy upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradeWorkerEnergyClass.IsItCustomType(NewType))
             {
                 __result = true;
@@ -42,7 +39,7 @@ class UpgradeWorkerEnergy_PostCreate
         }
         catch (System.Exception ex)
         {
-            ModnautsPlugin.Logger.LogError($"Error in UpgradeWorkerCarry_PostCreate patch: {ex}");
+            ModnautsPlugin.Logger.LogError($"Error in UpgradeWorkerEnergy_PostCreate patch: {ex}");
         }
     }
 }

@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradeWorkerMovement))]
 [HarmonyPatch("GetIsTypeUpgradeWorkerMovement")]
@@ -12,7 +9,7 @@ class UpgradeWorkerMovement_GetIsTypeUpgradeWorkerMovement
     {
         try
         {
-            //allow custom movement upgrades to be recognized as movement upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom movement upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradeWorkerMovementClass.IsItCustomType(NewType))
             {
                 __result = true;

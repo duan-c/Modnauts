@@ -13,8 +13,6 @@ class Mod_RegisterScriptGlobals
             //attach our custom classes to the script globals so that they can be accessed in LUA mod Creation() etc.
             if (NewScript?.Globals != null)
             {
-                //NewScript.Globals["ModnautLogger"] = ModnautsPlugin.ModnautLoggerClass;
-                //NewScript.Globals["ModnautWorld"] = ModnautsPlugin.ModnautWorldClass;
                 NewScript.Globals["ModUpgrade"] = ModManager.Instance.ModUpgradeClass;
             }
         }

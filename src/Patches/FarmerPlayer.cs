@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
 using Modnauts;
-using MoonSharp.Interpreter;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 using UnityEngine;
 
 [HarmonyPatch(typeof(FarmerPlayer))]
@@ -77,7 +74,7 @@ class FarmerPlayer_CreateScooter
     {
         try
         {
-            //by default the Mod models does not get into account.  this fixes it.
+            //by default the Mod models does not get taken into account.  this fixes it.
             ObjectType movementUpgrade = __instance.m_FarmerUpgrades.GetMovementUpgrade();
             if (ModManager.Instance.ModUpgradePlayerMovementClass.IsItCustomType(movementUpgrade))
             {

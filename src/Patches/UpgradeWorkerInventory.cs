@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradeWorkerInventory))]
 [HarmonyPatch("GetIsTypeUpgradeWorkerInventory")]
@@ -12,7 +9,7 @@ class UpgradeWorkerInventory_GetIsTypeUpgradeWorkerInventory
     {
         try
         {
-            //allow custom carry upgrades to be recognized as carry upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom inventory upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradeWorkerInventoryClass.IsItCustomType(NewType))
             {
                 __result = true;

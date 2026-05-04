@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradePlayerWhistle))]
 [HarmonyPatch("GetIsTypeUpgradePlayerWhistle")]
@@ -12,7 +9,7 @@ class UpgradePlayerWhistle_GetIsTypeUpgradePlayerWhistle
     {
         try
         {
-            //allow custom carry upgrades to be recognized as carry upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom whistle upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradePlayerWhistleClass.IsItCustomType(NewType))
             {
                 __result = true;

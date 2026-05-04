@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
-using MoonSharp.Interpreter;
 using Modnauts;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(UpgradeWorkerSearch))]
 [HarmonyPatch("GetIsTypeUpgradeWorkerSearch")]
@@ -12,7 +9,7 @@ class UpgradeWorkerSearch_GetIsTypeUpgradeWorkerSearch
     {
         try
         {
-            //allow custom search upgrades to be recognized as search upgrades by the game, so they can be used in the same way as the base game ones
+            //allow custom search upgrades to be recognized as upgrades by the game, so they can be used in the same way as the base game ones
             if (ModManager.Instance.ModUpgradeWorkerSearchClass.IsItCustomType(NewType))
             {
                 __result = true;
