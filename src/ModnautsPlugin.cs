@@ -2,7 +2,6 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using MoonSharp.Interpreter;
-using UnityEngine;
 
 namespace Modnauts;
 
@@ -11,7 +10,6 @@ public class ModnautsPlugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
     public static ModnautLogger ModnautLoggerClass;
-    //public static ModnautWorld ModnautWorldClass;
 
     private void Awake()
     {
@@ -23,16 +21,11 @@ public class ModnautsPlugin : BaseUnityPlugin
 
         // Initialize your classes first
         ModnautLoggerClass = new ModnautLogger();
-        //ModnautWorldClass = new ModnautWorld();
 
         // Apply Harmony patches
         var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
 
         Logger.LogInfo($"Harmony patches applied!");
-
-
-
-
     }
 }
