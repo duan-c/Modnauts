@@ -5,7 +5,7 @@ using MoonSharp.Interpreter;
 
 namespace Modnauts;
 
-[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInPlugin(ModnautsPluginInfo.PLUGIN_GUID, ModnautsPluginInfo.PLUGIN_NAME, ModnautsPluginInfo.PLUGIN_VERSION)]
 public class ModnautsPlugin : BaseUnityPlugin
 {
     internal static new ManualLogSource Logger;
@@ -15,7 +15,7 @@ public class ModnautsPlugin : BaseUnityPlugin
     {
         // Plugin startup logic
         Logger = base.Logger;
-        Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+        Logger.LogInfo($"Plugin {ModnautsPluginInfo.PLUGIN_GUID} is loaded!");
 
         UserData.RegisterAssembly();
 
@@ -23,7 +23,7 @@ public class ModnautsPlugin : BaseUnityPlugin
         ModnautLoggerClass = new ModnautLogger();
 
         // Apply Harmony patches
-        var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
+        var harmony = new Harmony(ModnautsPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
 
         Logger.LogInfo($"Harmony patches applied!");

@@ -1,9 +1,9 @@
 ﻿namespace Modnauts
 {
-    public static class MyPluginInfo
+    public static class ModnautsPluginInfo
     {
         public const string PLUGIN_GUID = "Modnauts";
         public const string PLUGIN_NAME = "Modnauts";
-        public const string PLUGIN_VERSION = "0.1.0";
+        public const string PLUGIN_VERSION = "1.0.0";
     }
 }
