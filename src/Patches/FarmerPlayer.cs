@@ -77,9 +77,10 @@ class FarmerPlayer_CreateScooter
             //by default the Mod models does not get taken into account.  this fixes it.
             ObjectType movementUpgrade = __instance.m_FarmerUpgrades.GetMovementUpgrade();
             if (ModManager.Instance.ModUpgradePlayerMovementClass.IsItCustomType(movementUpgrade))
-            {
+            {                
                 GameObject original = ModelManager.Instance.Load(movementUpgrade, "", false);
-                __instance.m_Scooter = InstantiationManager.MyInstantiate(original, __instance.transform.position, Quaternion.identity, null);
+                var transform = (__instance as UnityEngine.Component).transform;
+                __instance.m_Scooter = InstantiationManager.MyInstantiate(original, transform.position, Quaternion.identity, null);
                 PlaySound m_ScooterSound = AudioManager.Instance.StartEvent("ScooterMove", __instance, true);
                 Traverse.Create(__instance).Field("m_ScooterSound").SetValue(m_ScooterSound);
                 return false;
