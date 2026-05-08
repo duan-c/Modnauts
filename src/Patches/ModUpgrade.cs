@@ -4,7 +4,6 @@ using System;
 [MoonSharpUserData]
 public class ModUpgrade
 {
-    //TODO: CreateSign
     public void CreateUpgradePlayerInventory(string UniqueName, int Capacity, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {
         ModManager.Instance.ModUpgradePlayerInventoryClass.CreateUpgradePlayerInventory(UniqueName, 0, Capacity, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
@@ -40,6 +39,10 @@ public class ModUpgrade
     public void CreateUpgradeWorkerSearch(string UniqueName, int InitialDelay, int Range, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
     {
         ModManager.Instance.ModUpgradeWorkerSearchClass.CreateUpgradeWorkerSearch(UniqueName, 0, InitialDelay, Range, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+    }
+    public void CreateSign(string UniqueName, int Range, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+    {
+        ModManager.Instance.ModSignClass.CreateSign(UniqueName, 0, Range, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
     }
 
     public void SetUpgradeLevel(string NewTypeString, int Level)

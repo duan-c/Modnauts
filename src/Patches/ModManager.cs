@@ -12,6 +12,7 @@ public static class ModManagerExtensions
     public static ModUpgradeWorkerMemory ModUpgradeWorkerMemoryClass = new ModUpgradeWorkerMemory();
     public static ModUpgradeWorkerMovement ModUpgradeWorkerMovementClass = new ModUpgradeWorkerMovement();
     public static ModUpgradeWorkerSearch ModUpgradeWorkerSearchClass = new ModUpgradeWorkerSearch();
+    public static ModSign ModSignClass = new ModSign();
     public static ModUpgrade ModUpgradeClass = new ModUpgrade();
 
     extension(ModManager modManager)
@@ -26,6 +27,7 @@ public static class ModManagerExtensions
         public ModUpgradeWorkerMemory ModUpgradeWorkerMemoryClass => ModManagerExtensions.ModUpgradeWorkerMemoryClass;
         public ModUpgradeWorkerMovement ModUpgradeWorkerMovementClass => ModManagerExtensions.ModUpgradeWorkerMovementClass;
         public ModUpgradeWorkerSearch ModUpgradeWorkerSearchClass => ModManagerExtensions.ModUpgradeWorkerSearchClass;
+        public ModSign ModSignClass => ModManagerExtensions.ModSignClass;
         public ModUpgrade ModUpgradeClass => ModManagerExtensions.ModUpgradeClass;
     }
 }
@@ -59,6 +61,8 @@ class ModManager_Start
             __instance.ModUpgradeWorkerMovementClass.Init();
             __instance.ModCustomClasses.Add(__instance.ModUpgradeWorkerSearchClass);
             __instance.ModUpgradeWorkerSearchClass.Init();
+            __instance.ModCustomClasses.Add(__instance.ModSignClass);
+            __instance.ModSignClass.Init();
         }
         catch (System.Exception ex)
         {

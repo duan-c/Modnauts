@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using Modnauts;
 using UnityEngine;
+using Steamworks;
 
 [HarmonyPatch(typeof(FarmerPlayer))]
 [HarmonyPatch("UpdateSpeed")]
@@ -65,7 +66,6 @@ class FarmerPlayer_UpdateSpeed
 }
 
 
-
 [HarmonyPatch(typeof(FarmerPlayer))]
 [HarmonyPatch("CreateScooter")]
 class FarmerPlayer_CreateScooter
@@ -77,10 +77,9 @@ class FarmerPlayer_CreateScooter
             //by default the Mod models does not get taken into account.  this fixes it.
             ObjectType movementUpgrade = __instance.m_FarmerUpgrades.GetMovementUpgrade();
             if (ModManager.Instance.ModUpgradePlayerMovementClass.IsItCustomType(movementUpgrade))
-            {                
-                GameObject original = ModelManager.Instance.Load(movementUpgrade, "", false);
-                var transform = (__instance as UnityEngine.Component).transform;
-                __instance.m_Scooter = InstantiationManager.MyInstantiate(original, transform.position, Quaternion.identity, null);
+            {   
+                BaseClass baseClass = ObjectTypeList.Instance.CreateObjectFromIdentifier(movementUpgrade, __instance.transform.position, Quaternion.identity);
+                __instance.m_Scooter = baseClass.gameObject;
                 PlaySound m_ScooterSound = AudioManager.Instance.StartEvent("ScooterMove", __instance, true);
                 Traverse.Create(__instance).Field("m_ScooterSound").SetValue(m_ScooterSound);
                 return false;
