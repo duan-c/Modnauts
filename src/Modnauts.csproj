@@ -19,7 +19,6 @@
     <Compile Remove="ModnautWorld.cs" />
     <Compile Remove="Patches\CeremonyManager.cs" />
     <Compile Remove="Patches\GameOptions.cs" />
-    <Compile Remove="Patches\MainMenu.cs" />
     <Compile Remove="Patches\TutorialPanelController.cs" />
   </ItemGroup>
 

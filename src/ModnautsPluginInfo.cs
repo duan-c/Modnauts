@@ -4,6 +4,6 @@
     {
         public const string PLUGIN_GUID = "Modnauts";
         public const string PLUGIN_NAME = "Modnauts";
-        public const string PLUGIN_VERSION = "1.0.0";
+        public const string PLUGIN_VERSION = "1.0";
     }
 }

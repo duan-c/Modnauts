@@ -108,5 +108,6 @@ public class ModSign : ModCustom
         VariableManager.Instance.SetVariable(modObjectTypeFromName, "Level", Level);
         VariableManager.Instance.SetVariable(modObjectTypeFromName, "NoMultiple", 1);
         VariableManager.Instance.SetVariable(modObjectTypeFromName, "Range", Range);
+        //ModManager.Instance.ModTextClass.SetDescription(UniqueName, "Control Bot search areas. Press %kUseInHand while holding the sign to edit it.");
     }
 }
