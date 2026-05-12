@@ -3,6 +3,7 @@ using HarmonyLib;
 using Modnauts;
 using System.Collections.Generic;
 using UnityEngine;
+using static DarkTonic.MasterAudio.MasterAudio;
 
 [HarmonyPatch(typeof(AudioManager))]
 [HarmonyPatch("Mod_SoundEffect")]
@@ -12,25 +13,17 @@ class AudioManager_Mod_SoundEffect
     {
         try
         {
-            var ResetEvents = Traverse.Create(__instance).Field("ResetEvents").GetValue<Dictionary<string, AudioClip>>();
-
-            if (!ResetEvents.ContainsKey(EventName))
+            var AudioSourcesBySoundType = Traverse.Create(MasterAudio.Instance).Field("AudioSourcesBySoundType").GetValue<Dictionary<string, AudioGroupInfo>>();
+            if (!AudioSourcesBySoundType.ContainsKey(EventName))
             {
-                ResetEvents.Add(EventName, NewClip);
                 CreateGroupViaDynamicCreator(EventName);
-                MasterAudio.ChangeVariationClip(EventName, true, "", NewClip);
-            }
-            else
-            {
-                ResetEvents[EventName] = NewClip;
-                MasterAudio.ChangeVariationClip(EventName, true, "", NewClip);
             }
         }
         catch (System.Exception ex)
         {
             ModnautsPlugin.Logger.LogError($"Error in AudioManager_Mod_SoundEffect patch: {ex}");
         }
-        return false;
+        return true;
     }
 
     static void CreateGroupViaDynamicCreator(string groupName)
