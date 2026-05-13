@@ -26,6 +26,9 @@ public class ModnautsPlugin : BaseUnityPlugin
         var harmony = new Harmony(ModnautsPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
 
+        //register extension classes
+        UserData.RegisterExtensionType(typeof(ModToolExtensions));
+
         Logger.LogInfo($"Harmony patches applied!");
     }
 }
