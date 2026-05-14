@@ -18,6 +18,7 @@
 *   **/docs:** Documentation.
 *   **/resources/Mods:** Demo mod showcasing `ModUpgrade`.
 *   **/resources/meta:** IDE type definitions.
+*   **/resources/Models:** Example models in Blender format.
 
 ## 🛠 Quick Start
 1.  Ensure **Autonauts 140.2** and **BepInEx 5.4.21** are installed.

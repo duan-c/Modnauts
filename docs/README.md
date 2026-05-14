@@ -25,6 +25,7 @@
 *   **/docs:** Documentation.
 *   **/resources/Mods:** This is a demo Mod showcasing the `ModUpgrade` functionality.
 *   **/resources/meta:** IDE type definitions.
+*   **/resources/Models:** Example models in Blender format.
 
 ## Installation
 1. Ensure you have [Autonauts 140.2](https://store.steampowered.com/app/979120/Autonauts/) installed.
