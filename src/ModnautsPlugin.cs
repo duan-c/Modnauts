@@ -17,7 +17,7 @@ public class ModnautsPlugin : BaseUnityPlugin
         Logger = base.Logger;
         Logger.LogInfo($"Plugin {ModnautsPluginInfo.PLUGIN_GUID} is loaded!");
 
-        UserData.RegisterAssembly();
+        UserData.RegisterAssembly(includeExtensionTypes: true);
 
         // Initialize your classes first
         ModnautLoggerClass = new ModnautLogger();
@@ -25,9 +25,6 @@ public class ModnautsPlugin : BaseUnityPlugin
         // Apply Harmony patches
         var harmony = new Harmony(ModnautsPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
-
-        //register extension classes
-        UserData.RegisterExtensionType(typeof(ModToolExtensions));
 
         Logger.LogInfo($"Harmony patches applied!");
     }

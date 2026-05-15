@@ -11,4 +11,5 @@ function ModText.SetText(TextID, Text, ModText) end
 
 --- Sets the description of an object
 ---@param UniqueName string # The unique and corresponding name of the object - Required
+---@param Description string # The new description - Required
 function ModText.SetDescription(UniqueName, Description) end

@@ -18,10 +18,18 @@ ModTool = {}
 ---@param DestroyTarget boolean # Destroy the target object once completed - Defaults to true
 function ModTool.CreateTool(UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ObjectsToUseOnArr, TilesToUseOnArr, ObjectsToProduceArr, ObjectsToProduceAmountArr, AnimationDuration, ModelName, UsingCustomModel, CallbackOnComplete, DestroyTarget) end
 
---- Create a custom axe
+---@alias ToolType 'Axe' | 'Hoe' | 'Pick' | 'Scythe' | 'Shovel'
+
+--- Create a custom base tool
+---@param BaseType ToolType # Type of tool - Required
 ---@param UniqueName string # The unique and corresponding name of the tool - Required
 ---@param NewIngredientsStringArr string[] # List of ingredients required to make the upgrade - Defaults to none
 ---@param NewIngredientsAmountArr integer[] # The amount of each of the ingredients (Must match size of ingredients array) - Defaults to none
 ---@param ModelName string # The name/path of the custom model to use or name/path of the in game model to use - Defaults to in game 'Axe' Model
 ---@param UsingCustomModel boolean # True if using a custom model, false if using in game model/default model - Defaults to true
-function ModTool.CreateAxe(UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel) end
+function ModTool.CreateBaseTool(BaseType, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel) end
+
+--- Sets the base type of a custom tool to enable default behaviour for that type
+---@param UniqueName string # The unique and corresponding name of the tool - Required
+---@param BaseType MyToolType # Type of tool
+function ModTool.SetToolCategoryBase(UniqueName, BaseType) end
