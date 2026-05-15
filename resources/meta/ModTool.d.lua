@@ -25,11 +25,6 @@ function ModTool.CreateTool(UniqueName, NewIngredientsStringArr, NewIngredientsA
 ---@param UniqueName string # The unique and corresponding name of the tool - Required
 ---@param NewIngredientsStringArr string[] # List of ingredients required to make the upgrade - Defaults to none
 ---@param NewIngredientsAmountArr integer[] # The amount of each of the ingredients (Must match size of ingredients array) - Defaults to none
----@param ModelName string # The name/path of the custom model to use or name/path of the in game model to use - Defaults to in game 'Axe' Model
+---@param ModelName string # The name/path of the custom model to use or name/path of the in game model to use - Defaults to in game model
 ---@param UsingCustomModel boolean # True if using a custom model, false if using in game model/default model - Defaults to true
 function ModTool.CreateBaseTool(BaseType, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel) end
-
---- Sets the base type of a custom tool to enable default behaviour for that type
----@param UniqueName string # The unique and corresponding name of the tool - Required
----@param BaseType MyToolType # Type of tool
-function ModTool.SetToolCategoryBase(UniqueName, BaseType) end
