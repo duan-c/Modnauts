@@ -1,10 +1,15 @@
-﻿using Modnauts;
+﻿using BepInEx.Logging;
+using Modnauts;
 using MoonSharp.Interpreter;
 
 
 [MoonSharpUserData]
 public class ModnautLogger
 {
+    public void Log(LogLevel level, object data)
+    {
+        ModnautsPlugin.Logger.Log(level, data);
+    }
     public void LogDebug(object data)
     {
         ModnautsPlugin.Logger.LogDebug(data);
