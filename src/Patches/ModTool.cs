@@ -250,7 +250,10 @@ class ModTool_SetToolCategoryBase
     {
         try
         {
-            __instance.SetToolLevel(UniqueName);
+            if (GeneralUtils.m_InGame)
+            {
+                __instance.SetToolLevel(UniqueName);
+            }
         }
         catch (System.Exception ex)
         {
