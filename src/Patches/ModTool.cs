@@ -1,70 +1,77 @@
 ﻿using HarmonyLib;
 using Modnauts;
-using MoonSharp.Interpreter;
-using Steamworks;
-using System;
 using System.Collections.Generic;
-using System.Drawing.Drawing2D;
 
 public static class ModToolExtensions
 {
     extension(ModTool modTool)
     {
-        public void CreateBaseTool(string BaseType, string UniqueName, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+        public void SetToolLevel(string UniqueName, int Level = 1)
         {
-            MyTool.Type result = MyTool.Type.Total;
-            if (!Enum.TryParse<MyTool.Type>(BaseType, out result))
+            ObjectType objectType = ObjectType.Nothing;
+            foreach (KeyValuePair<ObjectType, string> modIDOriginal in modTool.ModIDOriginals)
             {
-                string descriptionOverride = "Error: ModTool.CreateBaseTool '" + BaseType + "' - Unknown tool type for base";
+                if (modIDOriginal.Value.Equals(UniqueName))
+                {
+                    objectType = modIDOriginal.Key;
+                }
+            }
+            if (objectType == ObjectType.Nothing)
+            {
+                string descriptionOverride = "Error: ModTool.SetToolLevel '" + UniqueName + "' - Custom Tool Not Recognised";
                 ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride);
                 return;
             }
-            switch (result)
+            MyTool.Type toolType = MyTool.GetType(objectType);
+            if (toolType == MyTool.Type.Total)
+            {
+                string descriptionOverride = "Error: ModTool.SetToolLevel '" + UniqueName + "' - Custom Tool has no Base Category";
+                ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride);
+                return;
+            }
+            switch (toolType)
             {
                 case MyTool.Type.Shovel:
-                    CreateShovel(modTool, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+                    modTool.SetShovelLevel(UniqueName, Level);
                     return;
                 case MyTool.Type.Hoe:
-                    CreateHoe(modTool, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+                    modTool.SetHoeLevel(UniqueName, Level);
                     return;
                 case MyTool.Type.Axe:
-                    CreateAxe(modTool, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+                    modTool.SetAxeLevel(UniqueName, Level);
                     return;
                 case MyTool.Type.Scythe:
-                    CreateScythe(modTool, UniqueName, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+                    modTool.SetScytheLevel(UniqueName, Level);
                     return;
                 case MyTool.Type.Pick:
-                    CreatePick(modTool, UniqueName, 0, NewIngredientsStringArr, NewIngredientsAmountArr, ModelName, UsingCustomModel);
+                    modTool.SetPickLevel(UniqueName, Level);
+                    return;
+                case MyTool.Type.Blade:
+                    modTool.SetBladeLevel(UniqueName, Level);
                     return;
                 default:
-                    string descriptionOverride = "Error: ModTool.CreateBaseTool '" + BaseType + "' - Unknown tool type for base";
-                    ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride);
                     return;
             }
         }
 
-        public void CreateShovel(string UniqueName, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+        private void SetShovelLevel(string UniqueName, int Level)
         {
-            modTool.CreateTool(
-                UniqueName,
-                NewIngredientsStringArr,
-                NewIngredientsAmountArr,
-                null,
-                null,
-                null,
-                null,
-                2,
-                ModelName,
-                UsingCustomModel,
-                null,
-                true);
-            ModManager.Instance.ModToolClass.SetToolCategoryBase(UniqueName, "Shovel");
-            ObjectType modObjectTypeFromName = ModManager.Instance.GetModObjectTypeFromName(UniqueName);
-            if (ModelName.Length == 0)
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 1)//Stick
             {
-                modTool.ModModels[modObjectTypeFromName] = "Models/Tools/ToolShovel";
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Plot", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Weed", UniqueName, 24);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "CropCarrot", UniqueName, 24);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Bush", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Hedge", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Mushroom", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "FlowerWild", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Grass", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "TreeStump", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Empty", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Clay", UniqueName, 0);
             }
-            if (GeneralUtils.m_InGame)
+            else if (Level < 2)//ToolShovelStone
             {
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Plot", UniqueName, 16);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Weed", UniqueName, 16);
@@ -77,62 +84,48 @@ public static class ModToolExtensions
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "TreeStump", UniqueName, 20);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Empty", UniqueName, 16);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Clay", UniqueName, 20);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "MaxUsage", 20);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "NoMultiple", 1);
+            }
+            else//ToolShovel
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Plot", UniqueName, 8);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Weed", UniqueName, 8);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "CropCarrot", UniqueName, 8);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Bush", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Hedge", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Mushroom", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "FlowerWild", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "Grass", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Shovel", "TreeStump", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Empty", UniqueName, 8);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Shovel", "Clay", UniqueName, 12);
             }
         }
-
-        public void CreateHoe(string UniqueName, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+        private void SetHoeLevel(string UniqueName, int Level)
         {
-            modTool.CreateTool(
-                UniqueName,
-                NewIngredientsStringArr,
-                NewIngredientsAmountArr,
-                null,
-                null,
-                null,
-                null,
-                2,
-                ModelName,
-                UsingCustomModel,
-                null,
-                true);
-            ModManager.Instance.ModToolClass.SetToolCategoryBase(UniqueName, "Hoe");
-            ObjectType modObjectTypeFromName = ModManager.Instance.GetModObjectTypeFromName(UniqueName);
-            if (ModelName.Length == 0)
-            {
-                modTool.ModModels[modObjectTypeFromName] = "Models/Tools/ToolHoe";
-            }
-            if (GeneralUtils.m_InGame)
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 2)//ToolHoeStone
             {
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Hoe", "Plot", UniqueName, 16);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "MaxUsage", 20);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "NoMultiple", 1);
+            }
+            else//ToolHoe
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Hoe", "Plot", UniqueName, 8);
             }
         }
-
-        public void CreateAxe(string UniqueName, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+        private void SetAxeLevel(string UniqueName, int Level)
         {
-            modTool.CreateTool(
-                UniqueName,
-                NewIngredientsStringArr,
-                NewIngredientsAmountArr,
-                null,
-                null,
-                null,
-                null,
-                2,
-                ModelName,
-                UsingCustomModel,
-                null,
-                true);
-            ModManager.Instance.ModToolClass.SetToolCategoryBase(UniqueName, "Axe");
-            ObjectType modObjectTypeFromName = ModManager.Instance.GetModObjectTypeFromName(UniqueName);
-            if (ModelName.Length == 0)
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 1)//Rock
             {
-                modTool.ModModels[modObjectTypeFromName] = "Models/Tools/ToolAxe";
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreePine", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeApple", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeCoconut", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeMulberry", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Log", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Plank", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Pole", UniqueName, 0);
             }
-            if (GeneralUtils.m_InGame)
+            else if (Level < 2)//ToolAxeStone
             {
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreePine", UniqueName, 24);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeApple", UniqueName, 24);
@@ -141,33 +134,85 @@ public static class ModToolExtensions
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Log", UniqueName, 16);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Plank", UniqueName, 16);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Pole", UniqueName, 12);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "MaxUsage", 20);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "NoMultiple", 1);
+            }
+            else//ToolAxe
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreePine", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeApple", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeCoconut", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "TreeMulberry", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Log", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Plank", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "Pole", UniqueName, 6);
             }
         }
-
-        public void CreateScythe(string UniqueName, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
+        private void SetScytheLevel(string UniqueName, int Level)
         {
-            modTool.CreateTool(
-                UniqueName,
-                NewIngredientsStringArr,
-                NewIngredientsAmountArr,
-                null,
-                null,
-                null,
-                null,
-                2,
-                ModelName,
-                UsingCustomModel,
-                null,
-                true);
-            ModManager.Instance.ModToolClass.SetToolCategoryBase(UniqueName, "Scythe");
-            ObjectType modObjectTypeFromName = ModManager.Instance.GetModObjectTypeFromName(UniqueName);
-            if (ModelName.Length == 0)
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 2)//ToolScytheStone
             {
-                modTool.ModModels[modObjectTypeFromName] = "Models/Tools/ToolScythe";
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropWheat", UniqueName, 10);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropCotton", UniqueName, 10);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Bullrushes", UniqueName, 10);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Grass", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerWild", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerPot", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropPumpkin", UniqueName, 6);
             }
-            if (GeneralUtils.m_InGame)
+            else//ToolScythe
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropWheat", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropCotton", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Bullrushes", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Grass", UniqueName, 6);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerWild", UniqueName, 4);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerPot", UniqueName, 4);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropPumpkin", UniqueName, 4);
+            }
+        }
+        private void SetPickLevel(string UniqueName, int Level)
+        {
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 1)//Rock
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Plot", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Boulder", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "TallBoulder", UniqueName, 32);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Iron", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Coal", UniqueName, 0);
+            }
+            else if (Level < 2)//ToolPickStone
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Plot", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Boulder", UniqueName, 24);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "TallBoulder", UniqueName, 24);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Iron", UniqueName, 20);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Coal", UniqueName, 20);
+            }
+            else//ToolPick
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Plot", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Boulder", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "TallBoulder", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Iron", UniqueName, 12);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Coal", UniqueName, 12);
+            }
+        }
+        private void SetBladeLevel(string UniqueName, int Level)
+        {
+            ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);
+            if (Level < 1)//RockSharp
+            {
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropWheat", UniqueName, 18);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropCotton", UniqueName, 18);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Bullrushes", UniqueName, 18);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "Grass", UniqueName, 16);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerWild", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerPot", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropPumpkin", UniqueName, 0);
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "FishAny", UniqueName, 10);
+            }
+            else//ToolBlade
             {
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropWheat", UniqueName, 8);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropCotton", UniqueName, 8);
@@ -176,50 +221,7 @@ public static class ModToolExtensions
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerWild", UniqueName, 5);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "FlowerPot", UniqueName, 5);
                 ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Scythe", "CropPumpkin", UniqueName, 5);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "MaxUsage", 40);
-                ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "NoMultiple", 1);
-            }
-        }
-
-        public void CreatePick(string UniqueName, int Level = 0, string[] NewIngredientsStringArr = null, int[] NewIngredientsAmountArr = null, string ModelName = "", bool UsingCustomModel = true)
-        {
-            try
-            {
-                modTool.CreateTool(
-                    UniqueName,
-                    NewIngredientsStringArr,
-                    NewIngredientsAmountArr,
-                    null,
-                    null,
-                    null,
-                    null,
-                    2,
-                    ModelName,
-                    UsingCustomModel,
-                    null,
-                    true);
-                ModManager.Instance.ModToolClass.SetToolCategoryBase(UniqueName, "Pick");
-                ObjectType modObjectTypeFromName = ModManager.Instance.GetModObjectTypeFromName(UniqueName);
-                if (ModelName.Length == 0)
-                {
-                    modTool.ModModels[modObjectTypeFromName] = "Models/Tools/ToolPick";
-                }
-                if (GeneralUtils.m_InGame)
-                {
-                    ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Plot", UniqueName, 20);
-                    ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "Boulder", UniqueName, 24);
-                    ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Mining", "TallBoulder", UniqueName, 24);
-                    ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Iron", UniqueName, 20);
-                    ModManager.Instance.ModVariableClass.SetVariableFarmerActionOnTiles("Mining", "Coal", UniqueName, 20);
-                    ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "MaxUsage", 20);
-                    ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "NoMultiple", 1);
-                    ModManager.Instance.ModVariableClass.SetVariableForObjectAsInt(UniqueName, "Level", Level);//using Tier variable increases model size
-                }
-            }
-            catch (Exception ex)
-            {
-                ModManager.Instance.WriteModError("ModTool.CreatePick Error: " + ex.ToString());
-                ModnautsPlugin.Logger.LogError($"Error in ModTool.CreatePick patch: {ex}");
+                ModManager.Instance.ModVariableClass.SetVariableFarmerAction("Chopping", "FishAny", UniqueName, 5);
             }
         }
     }
@@ -236,6 +238,23 @@ public static class ModToolExtensions
         Type.Torch;
         Type.Dredger;
         Type.Net;
-        Type.Blade;
     */
+}
+
+
+[HarmonyPatch(typeof(ModTool))]
+[HarmonyPatch("SetToolCategoryBase")]
+class ModTool_SetToolCategoryBase
+{
+    static void Postfix(ModTool __instance, string UniqueName, string BaseType)
+    {
+        try
+        {
+            __instance.SetToolLevel(UniqueName);
+        }
+        catch (System.Exception ex)
+        {
+            ModnautsPlugin.Logger.LogError($"Error in ModTool_SetToolCategoryBase patch: {ex}");
+        }
+    }
 }

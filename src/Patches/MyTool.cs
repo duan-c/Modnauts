@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
 using Modnauts;
-using System;
-using System.Collections.Generic;
-using System.Drawing.Drawing2D;
 
 [HarmonyPatch(typeof(MyTool))]
 [HarmonyPatch("GetType")]
