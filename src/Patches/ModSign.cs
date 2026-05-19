@@ -27,13 +27,13 @@ public class ModSign : ModCustom
     {
         if (UniqueName.Length == 0)
         {
-            string descriptionOverride = "Error: ModCustom.CreateSign '" + UniqueName + "' - Unique Name is null length";
+            string descriptionOverride = "Error: ModSign.CreateSign '" + UniqueName + "' - Unique Name is null length";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride);
             return;
         }
         if (NewIngredientsStringArr != null && NewIngredientsStringArr.Length != NewIngredientsAmountArr.Length)
         {
-            string descriptionOverride2 = "Error: ModCustom.CreateSign '" + UniqueName + "' - Ingredients and Ingredient amounts not equal";
+            string descriptionOverride2 = "Error: ModSign.CreateSign '" + UniqueName + "' - Ingredients and Ingredient amounts not equal";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride2);
             return;
         }
@@ -49,7 +49,7 @@ public class ModSign : ModCustom
         {
             if (ModManager.Instance.GetModObjectTypeFromName(UniqueName) != ObjectType.Nothing)
             {
-                string descriptionOverride3 = "Error: ModCustom.CreateSign '" + UniqueName + "' - already used this name!";
+                string descriptionOverride3 = "Error: ModSign.CreateSign '" + UniqueName + "' - already used this name!";
                 ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride3);
                 return;
             }
@@ -76,7 +76,7 @@ public class ModSign : ModCustom
                 lastCalledMod.CustomIDs.Add(objectType);
                 return;
             }
-            string descriptionOverride4 = "Error: ModCustom.CreateSign - Cannot find Lua Script";
+            string descriptionOverride4 = "Error: ModSign.CreateSign - Cannot find Lua Script";
             ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride4);
             return;
         }
@@ -93,7 +93,7 @@ public class ModSign : ModCustom
                     result = ModManager.Instance.GetModObjectTypeFromName(NewIngredientsStringArr[i]);
                     if (result == ObjectType.Nothing)
                     {
-                        string descriptionOverride5 = "Error: ModCustom.CreateSign - Object Ingredient '" + NewIngredientsStringArr[i] + "' - cannot be found";
+                        string descriptionOverride5 = "Error: ModSign.CreateSign - Object Ingredient '" + NewIngredientsStringArr[i] + "' - cannot be found";
                         ModManager.Instance.SetErrorLua(ModManager.ErrorState.Error_Misc, descriptionOverride5);
                         return;
                     }
